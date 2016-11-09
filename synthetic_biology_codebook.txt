@@ -1,0 +1,14 @@
+Synthetic biology
+
+The search terms are from the Oldham et al Scientific Landscape PLOS One article and intended simply as a working set. 
+
+Using Or operator
+
+"synthetic biology" || "synthetic genomics" || "synthetic genomic" || "synthetic genome" || "synthetic genomes" 
+
+Full text search conducted on 09112016 and deduplicated onto 1749 families in the Lens. 
+
+The online collection is accessible here: https://www.lens.org/lens/collection/13112
+
+Note that expanding on families produced around 11,400 results and only 10,000 can be saved. So would require splitting into two. 
+
