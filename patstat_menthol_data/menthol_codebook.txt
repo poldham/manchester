@@ -1,0 +1,14 @@
+Dataset: patstat menthol
+
+Source: PATSTAT 2016 Spring from patstat.org
+See query file for query details
+In vpt file, IPC8 subclass and IPC8 thesaurus applied
+NLP Abstract and NLP Title combined into one field called Abstract (NLP) (Phrases) + Title (NLP) (Phrases) and multi word phrases marked up.
+
+Dataset: lens menthol
+
+Search of title, abstract and claims on the term menthol in the Lens patent database. See menthol_tac_lens.png for details.
+
+Data refined to families in the lens, downloaded an imported into vantagepoint. 
+
+original data is in raw.
