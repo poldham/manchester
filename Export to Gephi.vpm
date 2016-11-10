@@ -1,0 +1,1018 @@
+Dim strVersion
+Dim strOptionsSelection
+Dim textFile
+Dim startDateTime
+Dim numTotalRows, numTotalColumns
+Dim nStatus, q
+
+strVersion="1.0"
+q=chr(34)
+
+Dim strMatrixView
+Dim strRowItemListView, arrGroupNamesRowItem, numGroupsRowItem
+Dim strColItemListView, arrGroupNamesColItem, numGroupsColItem
+Dim arrayEdges()
+Dim arrayPeriods()
+
+Const HtmlResource="Gephi-options.html"
+
+
+Dim dictNodeIdByLabel, dictNodeSizeById, dictNodeLabelById, dictNodeClassById, _
+	dictUniqueGroupNames, dictGroupNameById, _
+	dictGroupIdsByNodeLabel, dictTimestampsByNodeLabel, dictPeriodsByRelId, _
+	dictRelIdByFromTo, dictFromToByRelId, dictWeightByRelId, _
+	dictRecordsByLabelPeriod, dictPeriods
+Set dictNodeIdByLabel=CreateObject("Scripting.Dictionary")
+Set dictNodeSizeById=CreateObject("Scripting.Dictionary")
+Set dictNodeLabelById=CreateObject("Scripting.Dictionary")
+Set dictNodeClassById=CreateObject("Scripting.Dictionary")
+Set dictUniqueGroupNames=CreateObject("Scripting.Dictionary")
+Set dictGroupNameById=CreateObject("Scripting.Dictionary")
+Set dictGroupIdsByNodeLabel=CreateObject("Scripting.Dictionary")
+Set dictTimestampsByNodeLabel=CreateObject("Scripting.Dictionary")
+Set dictPeriodsByRelId=CreateObject("Scripting.Dictionary")
+Set dictRelIdByFromTo=CreateObject("Scripting.Dictionary")
+Set dictFromToByRelId=CreateObject("Scripting.Dictionary")
+Set dictWeightByRelId=CreateObject("Scripting.Dictionary")
+Set dictRecordsByLabelPeriod=CreateObject("Scripting.Dictionary")
+Set dictPeriods=CreateObject("Scripting.Dictionary")
+
+
+Dim regexSpecialChars, regexDoubleSpace, regexPeriod
+Set regexSpecialChars=CreateObject("VBScript.RegExp")
+Set regexDoubleSpace=CreateObject("VBScript.RegExp")
+Set regexPeriod=CreateObject("VBScript.RegExp")
+regexSpecialChars.IgnoreCase=True
+regexSpecialChars.Global=True
+regexSpecialChars.Pattern="[^a-z0-9\.,; \-\(\)\/\[\]]"
+regexDoubleSpace.IgnoreCase=True
+regexDoubleSpace.Global=True
+regexDoubleSpace.Pattern="\s{2,}"
+regexPeriod.IgnoreCase=True
+regexPeriod.Global=True
+regexPeriod.Pattern="\d{1,}"
+
+
+Dim bolStatic, bolDynamic
+Dim bolOneModeSymm, bolTwoMode, bolOneModeAsymm
+Dim strFirstField, strSecondField, strThirdField
+Dim bolDiffFields
+Dim bolCooccurrence, bolAutocorrelation, bolCrossCorrelation
+Dim bolRecords, bolInstances
+Dim bolPearson, bolCosine, bolProportional
+Dim bolUseDiagonal, bolGetAttributes, bolGetCombinedAttributes
+
+
+
+Dim strAppPath, strDataSetPath, strParentName
+
+App.GetPath strAppPath
+App.GetActiveDSDir strDataSetPath
+App.GetActiveDSName strParentName
+
+
+
+Dim fso
+Set fso=CreateObject("Scripting.FileSystemObject")
+If fso.FileExists(strAppPath & "Macros\Resource\" & HtmlResource) Then
+	Call Main
+Else
+	MsgBox "The file '" & HtmlResource & "' must be in your 'Macros\Resource\' directory."
+End If
+
+Sub Main
+	Dim fsoGexf
+	Dim strBaseName, strFileName, strDefaultFileName
+	Dim strCorrelationFunction, strBasedOn, strOptionsSelection
+	strOptionsSelection=selectedOptions( _
+		bolStatic, _
+		bolDynamic, _
+		bolOneModeSymm, _
+		bolOneModeAsymm, _
+		bolTwoMode, _
+		strFirstField, _
+		strSecondField, _
+		strThirdField, _
+		bolCooccurrence, _
+		bolAutocorrelation, _
+		bolCrossCorrelation, _
+		bolRecords, _
+		bolInstances, _
+		bolPearson, _
+		bolCosine, _
+		bolProportional, _
+		bolUseDiagonal, _
+		bolGetAttributes, _
+		bolGetCombinedAttributes)
+	If strOptionsSelection="-1" Then Exit Sub
+	If (bolDynamic) Then
+		If (NOT PeriodFieldStatus(strThirdField)) Then
+			MsgBox ("Dynamic networks require to select a proper 'Time field'!")
+			Exit Sub
+		End If
+	End If
+	If (bolGetCombinedAttributes) Then bolGetAttributes=False
+	If (strFirstField<>strSecondField) Then bolDiffFields=True
+
+	If (bolTwoMode AND NOT bolDiffFields) Then
+		MsgBox ("Two-mode networks require distinct 'From field' and 'To field' parameters!")
+		Exit Sub
+	End If
+
+	If (strFirstField = "") Then
+		MsgBox ("This script requires to select at least a 'From field'!")
+		Exit Sub
+	End If
+
+	If (strSecondField = "" AND (bolOneModeAsymm OR bolTwoMode)) Then
+		MsgBox ("Asymmetric and two-mode networks require a 'To field'!")
+		Exit Sub
+	End If
+
+	Set fsoGexf=CreateObject("Scripting.FileSystemObject")
+	strBaseName=fsoGexf.GetBaseName(strParentName)
+	App.GetFilenameToSave strDatasetPath, strDefaultFileName & ".gexf", _
+		"Gexf Network File (*.gexf)|*.gexf|All files (*.*)|*.*||", strFileName
+	If strFileName = "" Then Exit Sub
+        
+	'append .gexf if not added
+	If (StrComp(Right(strFileName, 5), ".gexf",1) <> 0) Then
+		strFileName = strFileName &".gexf"
+	End If
+    
+	Set textFile=fsoGexf.OpenTextFile(strFileName, 2, True)
+
+	startDateTime=now
+
+
+	nStatus=View.CreateList(strFirstField, strRowItemListView)
+	If nStatus<>0 Then Exit Sub
+	Call IndexNodes("1")
+	If (bolGetAttributes OR bolGetCombinedAttributes) Then
+		nStatus=List.GetGroupNames(arrGroupNamesRowItem)
+		If nStatus<>0 Then Exit Sub
+		Call IndexGroups("1")
+		If (IsArray(arrGroupNamesRowItem)) Then numGroupsRowItem=Ubound(arrGroupNamesRowItem)
+		numGroupsColItem=numGroupsRowItem
+	End If
+	nStatus=View.Delete(strRowItemListView)
+
+	If (bolDiffFields) Then
+		nStatus=View.CreateList(strSecondField, strColItemListView)
+		If nStatus<>0 Then Exit Sub
+		Call IndexNodes("2")
+		If (bolGetAttributes OR bolGetCombinedAttributes) Then
+			nStatus=List.GetGroupNames(arrGroupNamesColItem)
+			If nStatus<>0 Then Exit Sub
+			Call IndexGroups("2")
+			If (IsArray(arrGroupNamesColItem)) Then numGroupsColItem=Ubound(arrGroupNamesColItem)
+		End If
+		nStatus=View.Delete(strColItemListView)
+	End If
+
+	If (bolPearson) Then strCorrelationFunction="PEARSONS"
+	If (bolCosine) Then strCorrelationFunction="COSINE"
+	If (bolProportional) Then strCorrelationFunction="MAXPROPORTIONAL"
+	If (bolRecords) Then strBasedOn="RECORDS"
+	If (bolInstances) Then strBasedOn="INSTANCES"
+	If (bolDynamic) Then
+
+		strRowField=strFirstField & "|" & strThirdField
+		strColField=strSecondField & "|" & strThirdField
+
+		nStatus=View.CreateCooccurrenceMatrix(strFirstField, "UNGROUPED", strThirdField, "UNGROUPED", strBasedOn, str1x3View)
+		Call GetNodesTimestamps("1")
+		nStatus=View.Delete(str1x3View)
+		If Dataset.FieldExists(strFirstField & "|" & strThirdField) <> 0 Then ConcatenateFields strFirstField, strThirdField
+
+
+
+		If (strFirstField <> strSecondField) Then
+			nStatus=View.CreateCooccurrenceMatrix(strSecondField, "UNGROUPED", strThirdField, "UNGROUPED", strBasedOn, str2x3View)
+			Call GetNodesTimestamps("2")
+			nStatus=View.Delete(str2x3View)
+			If Dataset.FieldExists(strSecondField & "|" & strThirdField) <> 0 Then ConcatenateFields strSecondField, strThirdField
+		End If
+	Else
+		strRowField=strFirstField
+		strColField=strSecondField
+	End If
+	If (bolCooccurrence) Then nStatus=View.CreateCooccurrenceMatrix(strRowField, "UNGROUPED", strColField, "UNGROUPED", strBasedOn, strMatrixView)
+	If (bolAutocorrelation) Then nStatus=View.CreateAutocorrelationMatrix(strRowField, "UNGROUPED", strBasedOn, strCorrelationFunction, strMatrixView)
+	If (bolCrossCorrelation) Then nStatus=View.CreateCrosscorrelationMatrix(strRowField, "UNGROUPED", strColField, "UNGROUPED", strBasedOn, strCorrelationFunction, strMatrixView)
+	If nStatus<>0 Then Exit Sub
+	Matrix.Flood 0
+	Matrix.GetNumRows numTotalRows
+	Matrix.GetNumColumns numTotalColumns
+
+
+	Call CreateGexfFile
+	If (bolDynamic) Then
+		If Dataset.FieldExists(strRowField)=0 Then Dataset.DeleteField(strRowField)
+		If Dataset.FieldExists(strColField)=0 Then Dataset.DeleteField(strColField)
+		If Dataset.FieldExists("Key")=0 Then Dataset.DeleteField("Key")
+	End If
+    MsgBox strFileName & " successfully created"
+End Sub
+
+Function PeriodFieldStatus(strFieldName)
+	Dim strView, j, numRows, strItem
+	PeriodFieldStatus=False
+	If (strFieldName="") Then Exit Function
+	nStatus=View.CreateList(strFieldName, strView)
+	If nStatus<>0 Then
+		View.Delete strView
+		Exit Function
+	End If
+	List.GetNumRows numRows
+
+	For j=1 To numRows
+		List.GetValue j, 3, strItem
+		List.GetValue j, 1, strRecords
+		If (NOT regexPeriod.Test(strItem)) Then
+			View.Delete strView
+			Exit Function
+		End If
+		If CSng(strRecords) > 0 Then ArrayPush arrayPeriods, strItem & ".0"
+	Next
+	PeriodFieldStatus=True
+	SortArray arrayPeriods
+	View.Delete strView
+End Function
+
+
+
+
+Sub CreateGexfFile()
+	Dim strMode, strDirectedOrNot, strTimeFormat, strTimeRepresentation
+	Dim bolProcessGroups, arrFromTo
+	Dim arrTmp1, arrTmp2, arrPeriods, strPeriod, j, i
+	Dim idRow, idCol, intCellValue
+
+	strMode="static"
+	strDirectedOrNot="undirected"
+	strTimeFormat="double"
+	strTimeRepresentation="interval"
+	If (bolOneModeAsymm) Then strDirectedOrNot="directed"
+	If (bolDynamic) Then strMode="dynamic"
+	strTimeRepresentation="timestamp"
+	textFile.WriteLine "<?xml version=" & chr(34) & "1.0" & chr(34) & " encoding=" & chr(34) & "UTF-8" & chr(34) & "?>"
+	OpenTagWithAttr "gexf", array( _
+		"xmlns", "http://www.gexf.net/1.3", _
+		"version", "1.3", _
+		"xmlns:viz", "http://www.gexf.net/1.3/viz", _
+		"xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance", _
+		"xsi:schemaLocation", "http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd")
+	OpenTagWithAttr "meta", array("lastmodifieddate", now)
+	TagWithContent "creator", "Export-to-Gephi macro " & strVersion
+	TagWithContent "description", strMode & " network from [" & strFirstField & "] to [" & strSecondField & "]"
+	CloseTag "meta"
+	If (bolDynamic) Then
+		OpenTagWithAttr "graph", array( _
+			"mode", strMode, _
+			"defaultedgetype", strDirectedOrNot, _
+			"timeformat", strTimeFormat, _
+			"timerepresentation", strTimeRepresentation)
+	Else
+		OpenTagWithAttr "graph", array( _
+			"mode", strMode, _
+			"defaultedgetype", strDirectedOrNot)
+	End If
+
+    bolProcessGroups=(bolGetAttributes OR bolGetCombinedAttributes) AND (numGroupsRowItem>0 OR numGroupsColItem>0)
+
+    If (bolStatic OR bolProcessGroups OR bolTwoMode) Then
+    	OpenTagWithAttr "attributes", array( "class", "node", "mode", "static")
+    End If
+
+    If (bolTwoMode OR bolProcessGroups) Then
+	    If (bolTwoMode) Then
+	    	TagWithAttr "attribute", array( "id", "class", "title", "Class", "type", "string")
+		End If
+		If (bolProcessGroups) Then
+			If (bolGetAttributes) Then
+				OpenTagWithAttr "attribute", array( "id", "groups", "title", "Groups", "type", "liststring")
+				strOptions=join(dictUniqueGroupNames.Keys,"|")
+				TagWithContent "options", strOptions
+				CloseTag "attribute"
+			End If
+			If (bolGetCombinedAttributes) Then
+				TagWithAttr "attribute", array( "id", "groups", "title", "Groups", "type", "integer")
+			End If
+		End If
+	End If
+
+	If (bolDynamic) Then
+		If (bolTwoMode OR bolProcessGroups) Then CloseTag "attributes"
+	    OpenTagWithAttr "attributes", array( "class", "node", "mode", "dynamic")
+	End If
+
+    TagWithAttr "attribute", array( "id", "size", "title", "Size", "type", "double")
+	CloseTag "attributes"
+
+	If (bolDynamic) Then
+		OpenTagWithAttr "attributes", array( "class", "edge", "mode", "dynamic")
+	    TagWithAttr "attribute", array( "id", "weight", "title", "Weight", "type", "double")
+		CloseTag "attributes"
+	End If
+
+	OpenTag "nodes"
+	z=dictNodeLabelById.Keys
+	For Each strId in z
+
+
+
+
+		WriteNodeToFile strId
+	Next
+	CloseTag "nodes"
+
+	For j=3 to numTotalRows
+		Matrix.Sort "ROW", j, "DESCEND"
+		Matrix.GetValue j, 2, strRowItem
+
+
+		If (bolDynamic) Then
+			strRowItemTime=StaticItemTime(strRowItem)
+			strRowItem=StaticItemLabel(strRowItem)
+		End If
+		Do
+			If (strRowItem="N/A") Then Exit Do
+			idRow=NodeId(strRowItem, "1")
+			For i=3 To numTotalColumns
+
+				Matrix.GetValue j, i, intCellValue
+				If CSng(intCellValue)=0 Then exit for
+				Matrix.GetValue 2, i, strColItem
+
+				If (bolDynamic) Then
+					strColItemTime=StaticItemTime(strColItem)
+					strColItem=StaticItemLabel(strColItem)
+				End If
+				idCol=NodeId(strColItem, "2")
+				If ((NOT(bolDiffFields) AND bolUseDiagonal AND idRow>=idCol) OR _
+					(NOT(bolDiffFields) AND NOT(bolUseDiagonal) AND idRow>idCol) OR _
+					(bolDiffFields AND bolUseDiagonal) OR _
+					(bolDiffFields AND NOT(bolUseDiagonal) AND idRow<>idCol)) Then
+
+
+
+
+
+
+					If (bolStatic OR (bolDynamic AND strRowItemTime=strColItemTime)) Then
+						If (bolDynamic) Then
+							strTime=strRowItemTime
+						Else
+							strTime=""
+						End If
+						idRel=relId(idRow, idCol)
+						ArrayPush arrayEdges, idRel
+						If (bolDynamic) Then
+							Call AddToDictArray(dictPeriodsByRelId, idRel, strTime & ".0#" & intCellValue)
+						Else
+
+							dictWeightByRelId.Add idRel, intCellValue
+						End If
+					End If
+
+				End If
+			next
+		Loop While False
+	Next
+	OpenTag "edges"
+	arrFromTo=dictFromToByRelId.Keys
+	If (bolDynamic) Then
+		For Each strId In arrFromTo
+			arrTmp1=split(dictFromToByRelId(strId),"-")
+			If (bolDynamic) Then
+				OpenTagWithAttr "edge", array("id", strId, "source", arrTmp1(0), "target", arrTmp1(1))
+				arrPeriods=dictPeriodsByRelId(strId)
+				SortArray arrPeriods
+				OpenTag "spells"
+				For Each strPeriod In arrPeriods
+					arrTmp2=split(strPeriod, "#")
+					TagWithAttr "spell", array("timestamp", arrTmp2(0))
+				Next
+				CloseTag "spells"
+				OpenTag "attvalues"
+				For Each strPeriod In arrPeriods
+					arrTmp2=split(strPeriod, "#")
+					TagWithAttr "attvalue", array("for", "weight", "timestamp", arrTmp2(0), "value", arrTmp2(1))
+				Next
+				CloseTag "attvalues"
+			End If
+			CloseTag "edge"
+		Next
+	Else
+		For Each strId In arrFromTo
+			arrTmp1=split(dictFromToByRelId(strId),"-")
+			TagWithAttr "edge", array( "id", strId, "source", arrTmp1(0), "target", arrTmp1(1), "weight", dictWeightByRelId(strId))
+		Next
+	End If
+	CloseTag "edges"
+	CloseTag "graph"
+	CloseTag "gexf"
+	textFile.WriteLine "<!--Started: " & startDateTime & " and it took: " & datediff("s", startDateTime, now) & " seconds. Script version: " & strVersion & "-->"
+	textFile.Close
+	View.Delete strMatrixView
+End Sub
+
+Function TwoModeItem(strItem, strClass)
+	TwoModeItem=strItem & " [" & strClass & "]"
+End Function
+
+Sub WriteNodeToFile(strId)
+
+	Dim strItem, strClass, strSize
+	Dim strKey, strPeriod, arrSpells
+	Dim c, val, strGroup, arrGroups
+
+	strItem=dictNodeLabelById(strId)
+	strClass=dictNodeClassById(strId)
+	strSize=dictNodeSizeById(strId)
+
+	strKey=strItem
+	If (bolTwoMode) Then strKey=TwoModeItem(strItem, strClass)
+	OpenTagWithAttr "node", array("id", strId, "label", StdName(strItem))
+	If (bolDynamic) Then
+		OpenTag "spells"
+		arrSpells=dictTimestampsByNodeLabel(strKey)
+		For Each strSpell in arrSpells
+			arrTemp=Split(strSpell, "#")
+			TagWithAttr "spell", array("timestamp", arrTemp(0))
+		next
+
+
+
+		CloseTag "spells"
+	End If
+	OpenTag "attvalues"
+	If (bolDynamic) Then
+
+
+
+
+		arrPeriods=dictPeriods.Keys
+		SortArray arrPeriods
+		For Each strPeriod in arrPeriods
+			strSize="0"
+			If (dictRecordsByLabelPeriod.Exists(strKey & "#" & strPeriod)) Then
+				strSize=dictRecordsByLabelPeriod(strKey & "#" & strPeriod)
+			End If
+			TagWithAttr "attvalue", array( "for", "size", "value", strSize, "timestamp", strPeriod)
+		Next
+	Else
+		TagWithAttr "attvalue", array("for", "size", "value", strSize)
+	End If
+	If (bolTwoMode) Then
+		TagWithAttr "attvalue", array("for", "class", "value", strClass)
+	End If
+	If (bolGetAttributes OR bolGetCombinedAttributes) Then
+		If (isArray(dictGroupIdsByNodeLabel(strClass & "#" & strItem))) Then
+			arrGroups=dictGroupIdsByNodeLabel(strClass & "#" & strItem)
+			If (bolGetAttributes) Then
+				c=0
+				For Each strGroup in arrGroups
+					arrGroups(c)=StdName(dictGroupNameById(strClass & "#" & strGroup))
+					c=c+1
+				next
+				strGroups=join(arrGroups,"|")
+				TagWithAttr "attvalue", array("for", "groups", "value", strGroups)
+			End If
+
+			If (bolGetCombinedAttributes) Then
+				val=0
+				For Each strGroup in arrGroups
+					val=val+(2^(strGroup-1))
+				next
+				TagWithAttr "attvalue", array("for", "groups", "value", val)
+			End If
+		End If
+	End If
+	CloseTag "attvalues"
+
+	CloseTag "node"
+End Sub
+
+Sub WriteNodeToFilexxx(strId, strItem, strClass, strValue)
+	Dim strKey, strSpell, arrTemp
+	Dim c, intValue, strGroup, arrGroups
+	strKey=strItem
+	If (bolTwoMode) Then strKey=TwoModeItem(strItem, strClass)
+	OpenTagWithAttr "node", array("id", strId, "label", StdName(strItem))
+	If (bolDynamic) Then
+		OpenTag "spells"
+		spells=dictTimestampsByNodeLabel(strKey)
+		For Each strSpell in spells
+			arrTemp=Split(strSpell, "#")
+			TagWithAttr "spell", array("timestamp", arrTemp(0))
+		next
+		CloseTag "spells"
+	End If
+	OpenTag "attvalues"
+
+	If (bolDynamic) Then
+		For Each strSpell in spells
+			arrTemp=Split(strSpell, "#")
+			TagWithAttr "attvalue", array( "for", "0", "value", arrTemp(1), "timestamp", arrTemp(0))
+		next
+	Else
+		TagWithAttr "attvalue", array("for", "0", "value", strValue)
+	End If
+	If (bolTwoMode) Then
+		TagWithAttr "attvalue", array("for", "1", "value", strClass)
+	End If
+	If (bolGetAttributes OR bolGetCombinedAttributes) Then
+		If (isArray(dictGroupIdsByNodeLabel(strClass & "#" & strItem))) Then
+			arrGroups=dictGroupIdsByNodeLabel(strClass & "#" & strItem)
+			If (bolGetAttributes) Then
+				c=0
+				For Each strGroup in arrGroups
+					arrGroups(c)=StdName(dictGroupNameById(strClass & "#" & strGroup))
+					c=c+1
+				next
+				strGroups=join(arrGroups,"|")
+				TagWithAttr "attvalue", array("for", "2", "value", strGroups)
+			End If
+
+			If (bolGetCombinedAttributes) Then
+				intValue=0
+				For Each strGroup in arrGroups
+					intValue=intValue+(2^(strGroup-1))
+				next
+				TagWithAttr "attvalue", array("for", "2", "value", intValue)
+			End If
+		End If
+	End If
+	CloseTag "attvalues"
+	CloseTag "node"
+End Sub
+
+Sub OpenTag(strTag)
+	textFile.WriteLine "<" & strTag & ">"
+End Sub
+
+Sub OpenTagWithAttr(strTag, arrAttr)
+	If (isArray(arrAttr)) Then
+		textFile.WriteLine "<" & strTag & " " & XmlOptions(arrAttr) & ">"
+	else
+		textFile.WriteLine "<" & strTag & ">"
+	End If
+End Sub
+
+Sub TagWithAttr(strTag, arrAttr)
+	If (isArray(arrAttr)) Then
+		textFile.WriteLine "<" & strTag & " " & XmlOptions(arrAttr) & " />"
+	else
+		textFile.WriteLine "<" & strTag & " />"
+	End If
+End Sub
+
+Sub TagWithContent(strTag, strContent)
+	textFile.WriteLine "<" & strTag & ">" & strContent & "</" & strTag & ">"
+End Sub
+
+Sub CloseTag(strTag)
+	textFile.WriteLine "</" & strTag & ">"
+End Sub
+
+Function XmlOptions(arrAttr)
+	Dim arr()
+	Dim c, pair, e
+	XmlOptions=""
+	If (NOT isArray(arrAttr)) Then Exit Function
+	c=0
+	pair=""
+	For Each e in arrAttr
+		If (c) Then
+			pair=pair & "=" & chr(34) & e & chr(34)
+			c=0
+			ArrayPush arr, pair
+			pair=""
+		Else
+			pair=e
+			c=1
+		End If
+	next
+	XmlOptions=join(arr, " ")
+End Function
+
+Function relId(strFrom, strTo)
+	Dim strFromTo
+	relId=0
+	strFromTo=strFrom & "-" & strTo
+	If (dictRelIdByFromTo.Exists(strFromTo)) Then relId=dictRelIdByFromTo.Item(strFromTo)
+	If (relId=0) Then
+		relId=dictRelIdByFromTo.Count+1
+		dictRelIdByFromTo.Add strFromTo, relId
+		dictFromToByRelId.Add relId, strFromTo
+	End If
+End Function
+
+sub AddToDictArray(ByRef dict, strKey, strItem)
+	Dim curr
+	curr=dict(strKey)
+	If (IsArray(curr)) Then
+		ArrayPush curr, strItem
+		dict.Item(strKey)=curr
+	Else
+		dict.Item(strKey)=Array(strItem)
+	End If
+End Sub
+
+Function StaticItemLabel(str)
+	Dim arr
+	arr=split(str,"|")
+	If (isArray(arr)) Then
+		StaticItemLabel=arr(0)
+	Else
+		StaticItemLabel="N/A"
+	End If
+End Function
+
+Function StaticItemTime(str)
+	Dim arr
+	arr=split(str,"|")
+	If (isArray(arr)) Then
+		StaticItemTime=arr(1)
+	Else
+		StaticItemTime="N/A"
+	End If
+End Function
+
+
+Function selectedOptions(bolStatic, bolDynamic, bolOneModeSymm, bolOneModeAsymm, bolTwoMode, strFirstField, strSecondField, strThirdField, bolCooccurrence, bolAutocorrelation, bolCrossCorrelation, bolRecords, bolInstances, bolPearson, bolCosine, bolProportional, bolUseDiagonal, bolGetAttributes, bolGetCombinedAttributes)
+
+	Dim objBrowser
+	Dim c
+	Dim arrAllFieldNames, strField, strDialogName
+
+	selectedOptions="-1"
+
+    strDialogName = "GephiOptions"
+	App.CreateBrowserDialog strDialogName, objBrowser
+	objBrowser.width=540
+	objBrowser.height=640
+	objBrowser.MenuBar=False
+	objBrowser.StatusBar=False
+	objBrowser.ToolBar=0
+	objBrowser.Navigate("about:blank")
+	objBrowser.Visible=True
+	objBrowser.Navigate(strAppPath & "Macros\Resource\" & HtmlResource)
+
+	App.ResizeBrowserDialog strDialogName, 540, 640
+	App.SetBrowserDialogTitle strDialogName, "Export to Gephi"
+	Dataset.WaitUntilBrowserIsReady strDialogName, 30
+
+	c=1
+	Dataset.GetFieldNames arrAllFieldNames
+
+	For Each strField in arrAllFieldNames
+		objBrowser.document.scriptOptions.firstField.options.length=c
+		objBrowser.document.scriptOptions.firstField.options(c-1).Text=strField
+		objBrowser.document.scriptOptions.firstField.options(c-1).Value=strField
+		objBrowser.document.scriptOptions.secondField.options.length=c
+		objBrowser.document.scriptOptions.secondField.options(c-1).Text=strField
+		objBrowser.document.scriptOptions.secondField.options(c-1).Value=strField
+		objBrowser.document.scriptOptions.thirdField.options.length=c
+		objBrowser.document.scriptOptions.thirdField.options(c-1).Text=strField
+		objBrowser.document.scriptOptions.thirdField.options(c-1).Value=strField
+		c=c+1
+	Next
+	objBrowser.document.scriptOptions.firstField.value=""
+	objBrowser.document.scriptOptions.secondField.value=""
+	objBrowser.document.scriptOptions.thirdField.value=""
+
+
+	objBrowser.document.body.insertAdjacentHTML "beforeEnd", "<xml ID='fieldData' src='"& strTempPath &"fieldlist.xml'></xml>"
+	objBrowser.document.body.insertAdjacentHTML "beforeEnd", "<script language='JavaScript'>sortOptions();</script>"
+
+	App.ResizeBrowserDialog strDialogName, 540, 640
+
+
+	On Error Resume Next
+	Do
+		App.Sleep 5
+		App.CheckCancelProcess
+		strTest=objBrowser.document.parentWindow.Status
+		If (Err.number <> 0) Then
+			Exit Function
+		End If
+		If (strTest="VPCancel") Then
+			App.CloseBrowserDialog strDialogName
+			Exit Function
+		End If
+	Loop While strTest <> "VPReady"
+	If strTest="VPCancel" Then
+		App.CloseBrowserDialog strDialogName
+		Set objBrowser=nothing
+		Exit Function
+	End If
+	On Error Goto 0
+
+
+	App.ShowBrowserDialog strDialogName, "MINIMIZE"
+
+
+	strFirstField=objBrowser.document.scriptOptions.firstField.value
+	strSecondField=objBrowser.document.scriptOptions.secondField.value
+	strThirdField=objBrowser.document.scriptOptions.thirdField.value
+
+	bolStatic=objBrowser.document.scriptOptions.rdModeStatic.checked
+	bolDynamic=objBrowser.document.scriptOptions.rdModeDynamic.checked
+
+	bolOneModeSymm=objBrowser.document.scriptOptions.rdTypeOneModeSymm.checked
+	bolOneModeAsymm=objBrowser.document.scriptOptions.rdTypeOneModeAsymm.checked
+	bolTwoMode=objBrowser.document.scriptOptions.rdTypeTwoMode.checked
+
+	bolCooccurrence=objBrowser.document.scriptOptions.rdMatrixRelCooccur.checked
+	bolAutocorrelation=objBrowser.document.scriptOptions.rdMatrixRelAutocorr.checked
+	bolCrossCorrelation=objBrowser.document.scriptOptions.rdMatrixRelCrosscorr.checked
+	bolRecords=objBrowser.document.scriptOptions.rdMatrixBasedOnRecords.checked
+	bolInstances=objBrowser.document.scriptOptions.rdMatrixBasedOnInstances.checked
+	bolPearson=objBrowser.document.scriptOptions.rdMatrixFunctionPearson.checked
+	bolCosine=objBrowser.document.scriptOptions.rdMatrixFunctionCosine.checked
+	bolProportional=objBrowser.document.scriptOptions.rdMatrixFunctionPropor.checked
+
+	bolUseDiagonal=objBrowser.document.scriptOptions.chkUseDiagonal.checked
+	bolGetAttributes=objBrowser.document.scriptOptions.chkGetAttrFromGroups.checked
+	bolGetCombinedAttributes=objBrowser.document.scriptOptions.chkCombineAttrFromGroups.checked
+
+	App.CloseBrowserDialog strDialogName
+
+	selectedOptions="2"
+End Function
+
+Sub GetNodesTimestamps(strType)
+	Dim strKey
+	Dim numRows, numCols
+	If (NOT bolTwoMode) Then strType="1"
+	Matrix.Sort "COLUMN", 2, "ASCEND"
+	Matrix.GetNumRows numRows
+	Matrix.GetNumColumns numCols
+	Matrix.Flood 0
+	For j=3 to numRows
+		Matrix.GetValue j, 2, strKey
+		If (bolTwoMode) Then strKey=TwoModeItem(strKey, strType)
+
+		Do
+			If (dictTimestampsByNodeLabel.Exists(strKey)) Then Exit Do
+			Matrix.Sort "ROW", j, "DESCEND"
+			For i=3 to numCols
+				Matrix.GetValue j, i, strCellValue
+				If CSng(strCellValue)=0 Then Exit For
+				Matrix.GetValue 2, i, strTimePeriod
+				Call AddToDictArray(dictTimestampsByNodeLabel, strKey, strTimePeriod & ".0#" & strCellValue)
+				dictRecordsByLabelPeriod(strKey & "#" & strTimePeriod & ".0") = strCellValue
+				If (NOT dictPeriods.Exists(strTimePeriod & ".0")) Then
+					dictPeriods(strTimePeriod & ".0") = "1"
+				End If
+			next
+		Loop While False
+	Next
+	For Each k in dictTimestampsByNodeLabel
+		arr=dictTimestampsByNodeLabel(k)
+		Call SortArray(arr)
+		dictTimestampsByNodeLabel(k)=arr
+	next
+End Sub
+
+Sub SortArray(ByRef arr)
+	Dim x, j, t
+	For x=LBound(arr) To UBound(arr)-1
+		For j=x+1 To UBound(arr)
+		    If LCase(arr(x))>LCase(arr(j)) Then
+				t=arr(x)
+				arr(x)=arr(j)
+				arr(j)=t
+		    End If
+		Next
+	next
+End Sub
+
+Sub IndexNodes(strField)
+	Dim numRows, sizeCol, j, strId, strItem, strKey
+	List.GetNumRows numRows
+	sizeCol=1
+	If (strBasedOn="INSTANCES") Then sizeCol=2
+	For j=1 To numRows
+		List.GetValue j, sizeCol, strSize
+		List.GetValue j, 3, strItem
+		strId=dictNodeIdByLabel.Count+1
+		strKey=strItem
+		If (bolTwoMode) Then strKey=TwoModeItem(strItem, strField)
+		If (NOT dictNodeIdByLabel.Exists(strKey)) Then
+			dictNodeIdByLabel.Add strKey, strId
+			dictNodeSizeById.Add strId, strSize
+			dictNodeLabelById.Add strId, strItem
+			dictNodeClassById.Add strId, strField
+		End If
+	Next
+End Sub
+
+Function NodeId(strItem, strClass)
+	Dim strKey
+	If (bolTwoMode) Then
+		strKey=TwoModeItem(strItem, strClass)
+	else
+		strKey=strItem
+		strClass="1"
+	End If
+	If dictNodeIdByLabel.Exists(strKey) Then
+		NodeId=dictNodeIdByLabel.Item(strKey)
+	else
+		NodeId=0
+
+
+
+	End If
+End Function
+
+Sub IndexGroups(strField)
+	Dim n
+	List.GetGroupNames arrGroups
+	If (NOT isArray(arrGroups)) Then Exit Sub
+
+	For Each group in arrGroups
+		List.GetGroupColNum group, groupCol
+		dictGroupNameById.Add strField & "#" & groupCol-3, group
+		dictUniqueGroupNames.Item(StdName(group))=1
+		n=List.GetNumberOfMembersInGroup (group)
+		If (n>0) Then
+			List.Sort group, "DESCEND"
+			For z=1 to n
+				List.GetValue z, 3, strItem
+				If (bolTwoMode) Then strItem=TwoModeItem(strItem, strField)
+				curr=dictGroupIdsByNodeLabel(strField & "#" & strItem)
+				If (IsArray(curr)) Then
+					ArrayPush curr, groupCol-3
+					dictGroupIdsByNodeLabel.Item(strField & "#" & strItem)=curr
+				Else
+					dictGroupIdsByNodeLabel.Item(strField & "#" & strItem)=Array(groupCol-3)
+				End If
+			next
+		End If
+	next
+End Sub
+
+Function StdName(str)
+	StdName=regexSpecialChars.Replace(str, " ")
+	StdName=regexDoubleSpace.Replace(StdName, " ")
+End Function
+
+Sub ArrayPush(ByRef arr, ByVal val)
+   Dim ub
+   If IsArray(arr) Then
+     On Error Resume Next
+     ub=UBound(arr)
+     If Err.Number <> 0 Then ub=-1
+     Redim preserve arr(ub+1)
+     arr(UBound(arr))=val
+   End If
+End Sub
+
+Sub ConcatenateFields (strFirstField, strSecondField)
+    Dim strMissingItem
+
+    strMissingItem = "N/A"
+    blIncludeConnectorOnMissingItems = TRUE
+
+	Dim strUniqueField, strConnector, strNewField, strItem, strTempItem
+	Dim arrDefaultFields, arrFieldLabels, arrGetFields
+	Dim strTempView, strUniqueView, numTotalRows, numDetailRows
+	Dim i, j
+	Dim strFirstDetail, strSecondDetail, strUniqueItem, strFirstItem, strSecondItem
+    strConnector = "|"
+    strUniqueField = GetUniqueField
+    strNewField=strFirstField & strConnector & strSecondField
+	strNewField=funProposeFieldName(strNewField)
+'Create a thesaurus file to hold the results
+	Dim fso, ftxt, strThesaurusName, strDataFile, strTempPath, strThesaurusFileName
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	App.GetActiveDSName strDataFile
+	'strThesaurusName = fso.GetBaseName(strDataFile) &" "& strFirstField &" "& strSecondField
+	strThesaurusName = fso.GetTempName
+	strTempPath = fso.GetSpecialFolder(2) &"\"
+	strThesaurusFileName = strTempPath & strThesaurusName &".the"
+	Set ftxt = fso.OpenTextFile(strThesaurusFileName, 2, True, GetVPFormat())
+	ftxt.WriteLine "##Catenation thesaurus of "& strFirstField &" and "& strSecondField
+
+	'Open a list of the strUniquefield and detail windows of the two fields to combine
+	View.CreateList strUniqueField, strUniqueView
+	List.Sort "ITEM", "ASCEND"
+	List.GetNumRows numTotalRows
+	Dim arrFirstFieldValues, arrFirstFieldValueNrecs, numFirstFieldValues, arrSecondFieldValues, arrSecondFieldValueNrecs, numSecondFieldValues
+	'App.SetWindowPlacement "MINIMIZE"
+
+	For i = 1 to numTotalRows
+		List.SelectRowsPassive i, i
+		List.GetValue i, 3, strUniqueItem
+		List.GetValuesForSelectedRecords strFirstField, arrFirstFieldValues, arrFirstFieldValueNrecs
+		List.GetValuesForSelectedRecords strSecondField, arrSecondFieldValues, arrSecondFieldValueNrecs
+        
+        If UBound(arrFirstFieldValues) < 0 Then
+			strFirstItem = strMissingItem
+            If UBound(arrSecondFieldValues) < 0 Then
+			    strSecondItem = strMissingItem
+				ftxt.WriteLine "**"& strFirstItem & strConnector & strSecondItem
+                ftxt.WriteLine "100 1 ^"& strUniqueItem &"$"
+            Else
+                For Each strItem in arrSecondFieldValues
+                    ftxt.WriteLine "**"& strFirstItem & strConnector & strItem
+                    ftxt.WriteLine "100 1 ^"& strUniqueItem &"$"
+                Next
+			End If
+        Else
+            If UBound(arrSecondFieldValues) < 0 Then
+			    strSecondItem = strMissingItem
+                For Each strTempItem in arrFirstFieldValues
+                    ftxt.WriteLine "**"& strTempItem & strConnector & strSecondItem
+                    ftxt.WriteLine "100 1 ^"& strUniqueItem &"$"
+                Next
+            Else
+                For Each strTempItem in arrFirstFieldValues
+                    For Each strItem in arrSecondFieldValues
+                        ftxt.WriteLine "**"& strTempItem & strConnector & strItem
+                        ftxt.WriteLine "100 1 ^"& strUniqueItem &"$"
+                    Next
+                Next
+            End If
+        End If
+                        
+		List.DeselectAllPassive
+	Next
+	ftxt.Close
+	View.Delete strUniqueView
+	'Run the thesaurus then delete it
+	'App.SetWindowPlacement "RESTORE"
+	Dataset.ThesaurusEx strUniqueField, strTempPath, strThesaurusName &".the", strNewField, "NEUTRAL", "Y", "N", strTempView
+	fso.DeleteFile strThesaurusFileName
+	View.Delete strTempView
+End Sub
+
+Function GetUniqueField
+	Dim strTempView
+	If Dataset.FieldExists("Key")<>0 Then
+		Dataset.CreateKeyField strTempView
+		View.Delete strTempView
+	End If
+	GetUniqueField="Key"
+End Function
+
+Function funProposeFieldName(strFieldName)
+'Given a potential field name, the function checks for pre-existing fields and returns an appropriate field name.
+	Dim i, strNewFieldName
+	i = 1
+	strNewFieldName = strFieldName
+	While Dataset.FieldExists(strNewFieldName) = 0
+		i = i + 1
+		strNewFieldName = strFieldName &" ("& i &")"
+	Wend
+	funProposeFieldName = strNewFieldName
+End Function
+
+Function GroupExists(strGrpName, strFieldName)
+	Dim arrayExistingGroupNames, count
+	Dataset.GetGroupNames strFieldName, arrayExistingGroupNames
+	GroupExists=0
+	If IsArray(arrayExistingGroupNames) Then
+		For count=0 to Ubound(arrayExistingGroupNames)
+			If arrayExistingGroupNames(count)= strGrpName Then
+				GroupExists=1
+			End If
+		Next
+	End If
+End Function
+
+Function GetVPFormat()
+	Dim nFormat, strProduct, strVersion, strBuild, bUnicode
+	
+	nFormat = 0
+	App.GetProductNameAndVersion strProduct, strVersion 
+	
+	strVersion = Right(strVersion, Len(strVersion) - 8) 'strips off Version from the front of string 
+	strBuild = Right(strVersion, InStr(strVersion, " ") + 1) ' get build #
+	strVersion = Left(strVersion, Instr(strVersion, ".") - 1) 'get the version # to the left of decimal 
+	
+	'check if TDA product, if so check if version is greater than 3, and if so check if unicode
+	If (Left(strProduct, 7) = "Thomson") Then
+		If (strVersion > 3)Then
+			App.GetUnicodeEnabled bUnicode
+			If bUnicode Then
+				nFormat = -1
+			End If
+		End If
+		
+	'else check if version is greater than 6.1, and if so check if unicode
+	Else
+		If ((strVersion > 6) Or ((strVersion = 6) And (strBuild > 14611))) Then
+			App.GetUnicodeEnabled bUnicode
+			If bUnicode Then
+				nFormat = -1
+			End If
+		End If
+	End If
+	
+	GetVPFormat = nFormat
+End Function
