@@ -1,0 +1,1539 @@
+#Thesaurus of IPC Class and Subclass codes to definitions based on 2016.01 scheme
+**A01: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing
+100 1 ^A01$
+**A01B: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Soil Working In Agriculture Or Forestry; Parts, Details, Or Accessories Of Agricultural Machines Or Implements, In General
+100 1 ^A01B
+**A01C: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Planting; Sowing; Fertilising
+100 1 ^A01C
+**A01D: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Harvesting; Mowing
+100 1 ^A01D
+**A01F: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Threshing; Baling Of Straw, Hay Or The Like; Stationary Apparatus Or Hand Tools For Forming Or Binding Straw, Hay Or The Like Into Bundles; Cutting Of Straw, Hay Or The Like; Storing Agricultural Or Horticultural Produce
+100 1 ^A01F
+**A01G: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Horticulture; Cultivation Of Vegetables, Flowers, Rice, Fruit, Vines, Hops, Or Seaweed; Forestry; Watering
+100 1 ^A01G
+**A01H: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> New Plants Or Processes For Obtaining Them; Plant Reproduction By Tissue Culture Techniques
+100 1 ^A01H
+**A01J: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Manufacture Of Dairy Products
+100 1 ^A01J
+**A01K: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Animal Husbandry; Care Of Birds, Fishes, Insects; Fishing; Rearing Or Breeding Animals, Not Otherwise Provided For; New Breeds Of Animals
+100 1 ^A01K
+**A01L: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Shoeing Of Animals
+100 1 ^A01L
+**A01M: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Catching, Trapping Or Scaring Of Animals; Apparatus For The Destruction Of Noxious Animals Or Noxious Plants
+100 1 ^A01M
+**A01N: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Preservation Of Bodies Of Humans Or Animals Or Plants Or Parts Thereof; Biocides, E.G. As Disinfectants, As Pesticides Or As Herbicides; Pest Repellants Or Attractants; Plant Growth Regulators
+100 1 ^A01N
+**A01P: Human Necessities -> Agriculture; Forestry; Animal Husbandry; Hunting; Trapping; Fishing -> Biocidal, Pest Repellant, Pest Attractant Or Plant Growth Regulatory Activity Of Chemical Compounds Or Preparations
+100 1 ^A01P
+**A21: Human Necessities -> Baking; Equipment For Making Or Processing Doughs; Doughs For Baking
+100 1 ^A21$
+**A21B: Human Necessities -> Baking; Equipment For Making Or Processing Doughs; Doughs For Baking -> Bakers' Ovens; Machines Or Equipment For Baking
+100 1 ^A21B
+**A21C: Human Necessities -> Baking; Equipment For Making Or Processing Doughs; Doughs For Baking -> Machines Or Equipment For Making Or Processing Doughs; Handling Baked Articles Made From Dough
+100 1 ^A21C
+**A21D: Human Necessities -> Baking; Equipment For Making Or Processing Doughs; Doughs For Baking -> Treatment, E.G. Preservation, Of Flour Or Dough For Baking, E.G. By Addition Of Materials; Baking; Bakery Products; Preservation Thereof
+100 1 ^A21D
+**A22: Human Necessities -> Butchering; Meat Treatment; Processing Poultry Or Fish
+100 1 ^A22$
+**A22B: Human Necessities -> Butchering; Meat Treatment; Processing Poultry Or Fish -> Slaughtering
+100 1 ^A22B
+**A22C: Human Necessities -> Butchering; Meat Treatment; Processing Poultry Or Fish -> Processing Meat, Poultry, Or Fish
+100 1 ^A22C
+**A23: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes
+100 1 ^A23$
+**A23B: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Preserving, E.G. By Canning, Meat, Fish, Eggs, Fruit, Vegetables, Edible Seeds; Chemical Ripening Of Fruit Or Vegetables; The Preserved, Ripened, Or Canned Products
+100 1 ^A23B
+**A23C: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Dairy Products, E.G. Milk, Butter, Cheese; Milk Or Cheese Substitutes; Making Thereof
+100 1 ^A23C
+**A23D: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Edible Oils Or Fats, E.G. Margarines, Shortenings, Cooking Oils
+100 1 ^A23D
+**A23F: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Coffee; Tea; Their Substitutes; Manufacture, Preparation, Or Infusion Thereof
+100 1 ^A23F
+**A23G: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Cocoa; Cocoa Products, E.G. Chocolate; Substitutes For Cocoa Or Cocoa Products; Confectionery; Chewing Gum; Ice-Cream; Preparation Thereof
+100 1 ^A23G
+**A23J: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Protein Compositions For Foodstuffs; Working-Up Proteins For Foodstuffs; Phosphatide Compositions For Foodstuffs
+100 1 ^A23J
+**A23K: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Feeding-Stuffs Specially Adapted For Animals; Methods Specially Adapted For Production Thereof
+100 1 ^A23K
+**A23L: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Foods, Foodstuffs, Or Non-Alcoholic Beverages, Not Covered By Subclasses A21d Or A23b-A23j; Their Preparation Or Treatment, E.G. Cooking, Modification Of Nutritive Qualities, Physical Treatment; Preservation Of Foods Or Foodstuffs, In General
+100 1 ^A23L
+**A23N: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Machines Or Apparatus For Treating Harvested Fruit, Vegetables, Or Flower Bulbs In Bulk, Not Otherwise Provided For; Peeling Vegetables Or Fruit In Bulk; Apparatus For Preparing Animal Feeding-Stuffs
+100 1 ^A23N
+**A23P: Human Necessities -> Foods Or Foodstuffs; Their Treatment, Not Covered By Other Classes -> Shaping Or Working Of Foodstuffs, Not Fully Covered By A Single Other Subclass
+100 1 ^A23P
+**A24: Human Necessities -> Tobacco; Cigars; Cigarettes; Smokers' Requisites
+100 1 ^A24$
+**A24B: Human Necessities -> Tobacco; Cigars; Cigarettes; Smokers' Requisites -> Manufacture Or Preparation Of Tobacco For Smoking Or Chewing; Tobacco; Snuff
+100 1 ^A24B
+**A24C: Human Necessities -> Tobacco; Cigars; Cigarettes; Smokers' Requisites -> Machines For Making Cigars Or Cigarettes
+100 1 ^A24C
+**A24D: Human Necessities -> Tobacco; Cigars; Cigarettes; Smokers' Requisites -> Cigars; Cigarettes; Tobacco Smoke Filters; Mouthpieces For Cigars Or Cigarettes; Manufacture Of Tobacco Smoke Filters Or Mouthpieces
+100 1 ^A24D
+**A24F: Human Necessities -> Tobacco; Cigars; Cigarettes; Smokers' Requisites -> Smokers' Requisites; Match Boxes
+100 1 ^A24F
+**A41: Human Necessities -> Wearing Apparel
+100 1 ^A41$
+**A41B: Human Necessities -> Wearing Apparel -> Shirts; Underwear; Baby Linen; Handkerchiefs
+100 1 ^A41B
+**A41C: Human Necessities -> Wearing Apparel -> Corsets; BrassiÈres
+100 1 ^A41C
+**A41D: Human Necessities -> Wearing Apparel -> Outerwear; Protective Garments; Accessories
+100 1 ^A41D
+**A41F: Human Necessities -> Wearing Apparel -> Garment Fastenings; Suspenders
+100 1 ^A41F
+**A41G: Human Necessities -> Wearing Apparel -> Artificial Flowers; Wigs; Masks; Feathers
+100 1 ^A41G
+**A41H: Human Necessities -> Wearing Apparel -> Appliances Or Methods For Making Clothes, E.G. For Dress-Making, For Tailoring, Not Otherwise Provided For
+100 1 ^A41H
+**A42: Human Necessities -> Headwear
+100 1 ^A42$
+**A42B: Human Necessities -> Headwear -> Hats; Head Coverings
+100 1 ^A42B
+**A42C: Human Necessities -> Headwear -> Manufacturing Or Trimming Hats Or Other Head Coverings
+100 1 ^A42C
+**A43: Human Necessities -> Footwear
+100 1 ^A43$
+**A43B: Human Necessities -> Footwear -> Characteristic Features Of Footwear; Parts Of Footwear
+100 1 ^A43B
+**A43C: Human Necessities -> Footwear -> Fastenings Or Attachments For Footwear; Laces In General
+100 1 ^A43C
+**A43D: Human Necessities -> Footwear -> Machines, Tools, Equipment Or Methods For Manufacturing Or Repairing Footwear
+100 1 ^A43D
+**A44: Human Necessities -> Haberdashery; Jewellery
+100 1 ^A44$
+**A44B: Human Necessities -> Haberdashery; Jewellery -> Buttons, Pins, Buckles, Slide Fasteners, Or The Like
+100 1 ^A44B
+**A44C: Human Necessities -> Haberdashery; Jewellery -> Jewellery; Bracelets; Other Personal Adornments; Coins
+100 1 ^A44C
+**A45: Human Necessities -> Hand Or Travelling Articles
+100 1 ^A45$
+**A45B: Human Necessities -> Hand Or Travelling Articles -> Walking Sticks; Umbrellas; Ladies' Or Like Fans
+100 1 ^A45B
+**A45C: Human Necessities -> Hand Or Travelling Articles -> Purses; Luggage; Hand Carried Bags
+100 1 ^A45C
+**A45D: Human Necessities -> Hand Or Travelling Articles -> Hairdressing Or Shaving Equipment; Manicuring Or Other Cosmetic Treatment
+100 1 ^A45D
+**A45F: Human Necessities -> Hand Or Travelling Articles -> Travelling Or Camp Equipment; Sacks Or Packs Carried On The Body
+100 1 ^A45F
+**A46: Human Necessities -> Brushware
+100 1 ^A46$
+**A46B: Human Necessities -> Brushware -> Brushes
+100 1 ^A46B
+**A46D: Human Necessities -> Brushware -> Manufacture Of Brushes
+100 1 ^A46D
+**A47: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General
+100 1 ^A47$
+**A47B: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Tables; Desks; Office Furniture; Cabinets; Drawers; General Details Of Furniture
+100 1 ^A47B
+**A47C: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Chairs; Sofas; Beds
+100 1 ^A47C
+**A47D: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Furniture Specially Adapted For Children
+100 1 ^A47D
+**A47F: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Special Furniture, Fittings, Or Accessories For Shops, Storehouses, Bars, Restaurants, Or The Like; Paying Counters
+100 1 ^A47F
+**A47G: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Household Or Table Equipment
+100 1 ^A47G
+**A47H: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Furnishings For Windows Or Doors
+100 1 ^A47H
+**A47J: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Kitchen Equipment; Coffee Mills; Spice Mills; Apparatus For Making Beverages
+100 1 ^A47J
+**A47K: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Sanitary Equipment Not Otherwise Provided For; Toilet Accessories
+100 1 ^A47K
+**A47L: Human Necessities -> Furniture; Domestic Articles Or Appliances; Coffee Mills; Spice Mills; Suction Cleaners In General -> Domestic Washing Or Cleaning; Suction Cleaners In General
+100 1 ^A47L
+**A61: Human Necessities -> Medical Or Veterinary Science; Hygiene
+100 1 ^A61$
+**A61B: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Diagnosis; Surgery; Identification
+100 1 ^A61B
+**A61C: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Dentistry; Apparatus Or Methods For Oral Or Dental Hygiene
+100 1 ^A61C
+**A61D: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Veterinary Instruments, Implements, Tools, Or Methods
+100 1 ^A61D
+**A61F: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Filters Implantable Into Blood Vessels; Prostheses; Devices Providing Patency To, Or Preventing Collapsing Of, Tubular Structures Of The Body, E.G. Stents; Orthopaedic, Nursing Or Contraceptive Devices; Fomentation; Treatment Or Protection Of Eyes Or Ears; Bandages, Dressings Or Absorbent Pads; First-Aid Kits
+100 1 ^A61F
+**A61G: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Transport, Personal Conveyances, Or Accommodation Specially Adapted For Patients Or Disabled Persons; Operating Tables Or Chairs; Chairs For Dentistry; Funeral Devices
+100 1 ^A61G
+**A61H: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Physical Therapy Apparatus, E.G. Devices For Locating Or Stimulating Reflex Points In The Body; Artificial Respiration; Massage; Bathing Devices For Special Therapeutic Or Hygienic Purposes Or Specific Parts Of The Body
+100 1 ^A61H
+**A61J: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Containers Specially Adapted For Medical Or Pharmaceutical Purposes; Devices Or Methods Specially Adapted For Bringing Pharmaceutical Products Into Particular Physical Or Administering Forms; Devices For Administering Food Or Medicines Orally; Baby Comforters; Devices For Receiving Spittle
+100 1 ^A61J
+**A61K: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Preparations For Medical, Dental, Or Toilet Purposes
+100 1 ^A61K
+**A61L: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Methods Or Apparatus For Sterilising Materials Or Objects In General; Disinfection, Sterilisation, Or Deodorisation Of Air; Chemical Aspects Of Bandages, Dressings, Absorbent Pads, Or Surgical Articles; Materials For Bandages, Dressings, Absorbent Pads, Or Surgical Articles
+100 1 ^A61L
+**A61M: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Devices For Introducing Media Into, Or Onto, The Body; Devices For Transducing Body Media Or For Taking Media From The Body; Devices For Producing Or Ending Sleep Or Stupor
+100 1 ^A61M
+**A61N: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Electrotherapy; Magnetotherapy; Radiation Therapy; Ultrasound Therapy
+100 1 ^A61N
+**A61P: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Specific Therapeutic Activity Of Chemical Compounds Or Medicinal Preparations
+100 1 ^A61P
+**A61Q: Human Necessities -> Medical Or Veterinary Science; Hygiene -> Specific Use Of Cosmetics Or Similar Toilet Preparations
+100 1 ^A61Q
+**A62: Human Necessities -> Life-Saving; Fire-Fighting
+100 1 ^A62$
+**A62B: Human Necessities -> Life-Saving; Fire-Fighting -> Devices, Apparatus Or Methods For Life-Saving
+100 1 ^A62B
+**A62C: Human Necessities -> Life-Saving; Fire-Fighting -> Fire-Fighting
+100 1 ^A62C
+**A62D: Human Necessities -> Life-Saving; Fire-Fighting -> Chemical Means For Extinguishing Fires; Processes For Making Harmful Chemical Substances Harmless, Or Less Harmful, By Effecting A Chemical Change; Composition Of Materials For Coverings Or Clothing For Protecting Against Harmful Chemical Agents; Composition Of Materials For Transparent Parts Of Gas-Masks, Respirators, Breathing Bags Or Helmets; Composition Of Chemical Materials For Use In Breathing Apparatus
+100 1 ^A62D
+**A63: Human Necessities -> Sports; Games; Amusements
+100 1 ^A63$
+**A63B: Human Necessities -> Sports; Games; Amusements -> Apparatus For Physical Training, Gymnastics, Swimming, Climbing, Or Fencing; Ball Games; Training Equipment
+100 1 ^A63B
+**A63C: Human Necessities -> Sports; Games; Amusements -> Skates; Skis; Roller Skates; Design Or Layout Of Courts, Rinks Or The Like
+100 1 ^A63C
+**A63D: Human Necessities -> Sports; Games; Amusements -> Bowling Games, E.G. Skittles, Bocce Or Bowls; Installations Therefor; Bagatelle Or Similar Games; Billiards
+100 1 ^A63D
+**A63F: Human Necessities -> Sports; Games; Amusements -> Card, Board Or Roulette Games; Indoor Games Using Small Moving Playing Bodies; Video Games; Games Not Otherwise Provided For
+100 1 ^A63F
+**A63G: Human Necessities -> Sports; Games; Amusements -> Merry-Go-Rounds; Swings; Rocking-Horses; Chutes; Switchbacks; Similar Devices For Public Amusement
+100 1 ^A63G
+**A63H: Human Necessities -> Sports; Games; Amusements -> Toys, E.G. Tops, Dolls, Hoops, Building Blocks
+100 1 ^A63H
+**A63J: Human Necessities -> Sports; Games; Amusements -> Devices For Theatres, Circuses, Or The Like; Conjuring Appliances Or The Like
+100 1 ^A63J
+**A63K: Human Necessities -> Sports; Games; Amusements -> Racing; Riding Sports; Equipment Or Accessories Therefor
+100 1 ^A63K
+**A99: Human Necessities -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^A99$
+**A99Z: Human Necessities -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^A99Z
+**B01: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General
+100 1 ^B01$
+**B01B: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General -> Boiling; Boiling Apparatus
+100 1 ^B01B
+**B01D: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General -> Separation
+100 1 ^B01D
+**B01F: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General -> Mixing, E.G. Dissolving, Emulsifying, Dispersing
+100 1 ^B01F
+**B01J: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General -> Chemical Or Physical Processes, E.G. Catalysis, Colloid Chemistry; Their Relevant Apparatus
+100 1 ^B01J
+**B01L: Performing Operations; Transporting -> Physical Or Chemical Processes Or Apparatus In General -> Chemical Or Physical Laboratory Apparatus For General Use
+100 1 ^B01L
+**B02: Performing Operations; Transporting -> Crushing, Pulverising, Or Disintegrating; Preparatory Treatment Of Grain For Milling
+100 1 ^B02$
+**B02B: Performing Operations; Transporting -> Crushing, Pulverising, Or Disintegrating; Preparatory Treatment Of Grain For Milling -> Preparing Grain For Milling; Refining Granular Fruit To Commercial Products By Working The Surface
+100 1 ^B02B
+**B02C: Performing Operations; Transporting -> Crushing, Pulverising, Or Disintegrating; Preparatory Treatment Of Grain For Milling -> Crushing, Pulverising, Or Disintegrating In General; Milling Grain
+100 1 ^B02C
+**B03: Performing Operations; Transporting -> Separation Of Solid Materials Using Liquids Or Using Pneumatic Tables Or Jigs; Magnetic Or Electrostatic Separation Of Solid Materials From Solid Materials Or Fluids; Separation By High-Voltage Electric Fields
+100 1 ^B03$
+**B03B: Performing Operations; Transporting -> Separation Of Solid Materials Using Liquids Or Using Pneumatic Tables Or Jigs; Magnetic Or Electrostatic Separation Of Solid Materials From Solid Materials Or Fluids; Separation By High-Voltage Electric Fields -> Separating Solid Materials Using Liquids Or Using Pneumatic Tables Or Jigs
+100 1 ^B03B
+**B03C: Performing Operations; Transporting -> Separation Of Solid Materials Using Liquids Or Using Pneumatic Tables Or Jigs; Magnetic Or Electrostatic Separation Of Solid Materials From Solid Materials Or Fluids; Separation By High-Voltage Electric Fields -> Magnetic Or Electrostatic Separation Of Solid Materials From Solid Materials Or Fluids; Separation By High-Voltage Electric Fields
+100 1 ^B03C
+**B03D: Performing Operations; Transporting -> Separation Of Solid Materials Using Liquids Or Using Pneumatic Tables Or Jigs; Magnetic Or Electrostatic Separation Of Solid Materials From Solid Materials Or Fluids; Separation By High-Voltage Electric Fields -> Flotation; Differential Sedimentation
+100 1 ^B03D
+**B04: Performing Operations; Transporting -> Centrifugal Apparatus Or Machines For Carrying-Out Physical Or Chemical Processes
+100 1 ^B04$
+**B04B: Performing Operations; Transporting -> Centrifugal Apparatus Or Machines For Carrying-Out Physical Or Chemical Processes -> Centrifuges
+100 1 ^B04B
+**B04C: Performing Operations; Transporting -> Centrifugal Apparatus Or Machines For Carrying-Out Physical Or Chemical Processes -> Apparatus Using Free Vortex Flow, E.G. Cyclones
+100 1 ^B04C
+**B05: Performing Operations; Transporting -> Spraying Or Atomising In General; Applying Liquids Or Other Fluent Materials To Surfaces, In General
+100 1 ^B05$
+**B05B: Performing Operations; Transporting -> Spraying Or Atomising In General; Applying Liquids Or Other Fluent Materials To Surfaces, In General -> Spraying Apparatus; Atomising Apparatus; Nozzles
+100 1 ^B05B
+**B05C: Performing Operations; Transporting -> Spraying Or Atomising In General; Applying Liquids Or Other Fluent Materials To Surfaces, In General -> Apparatus For Applying Liquids Or Other Fluent Materials To Surfaces, In General
+100 1 ^B05C
+**B05D: Performing Operations; Transporting -> Spraying Or Atomising In General; Applying Liquids Or Other Fluent Materials To Surfaces, In General -> Processes For Applying Liquids Or Other Fluent Materials To Surfaces, In General
+100 1 ^B05D
+**B06: Performing Operations; Transporting -> Generating Or Transmitting Mechanical Vibrations In General
+100 1 ^B06$
+**B06B: Performing Operations; Transporting -> Generating Or Transmitting Mechanical Vibrations In General -> Generating Or Transmitting Mechanical Vibrations In General
+100 1 ^B06B
+**B07: Performing Operations; Transporting -> Separating Solids From Solids; Sorting
+100 1 ^B07$
+**B07B: Performing Operations; Transporting -> Separating Solids From Solids; Sorting -> Separating Solids From Solids By Sieving, Screening, Or Sifting Or By Using Gas Currents; Other Separating By Dry Methods Applicable To Bulk Material, E.G. Loose Articles Fit To Be Handled Like Bulk Material
+100 1 ^B07B
+**B07C: Performing Operations; Transporting -> Separating Solids From Solids; Sorting -> Postal Sorting; Sorting Individual Articles, Or Bulk Material Fit To Be Sorted Piece-Meal, E.G. By Picking
+100 1 ^B07C
+**B08: Performing Operations; Transporting -> Cleaning
+100 1 ^B08$
+**B08B: Performing Operations; Transporting -> Cleaning -> Cleaning In General; Prevention Of Fouling In General
+100 1 ^B08B
+**B09: Performing Operations; Transporting -> Disposal Of Solid Waste; Reclamation Of Contaminated Soil
+100 1 ^B09$
+**B09B: Performing Operations; Transporting -> Disposal Of Solid Waste; Reclamation Of Contaminated Soil -> Disposal Of Solid Waste
+100 1 ^B09B
+**B09C: Performing Operations; Transporting -> Disposal Of Solid Waste; Reclamation Of Contaminated Soil -> Reclamation Of Contaminated Soil
+100 1 ^B09C
+**B21: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal
+100 1 ^B21$
+**B21B: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Rolling Of Metal
+100 1 ^B21B
+**B21C: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Manufacture Of Metal Sheets, Wire, Rods, Tubes, Profiles Or Like Semi-Manufactured Products Otherwise Than By Rolling; Auxiliary Operations Used In Connection With Metal-Working Without Essentially Removing Material
+100 1 ^B21C
+**B21D: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Working Or Processing Of Sheet Metal Or Metal Tubes, Rods Or Profiles Without Essentially Removing Material; Punching Metal
+100 1 ^B21D
+**B21F: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Working Or Processing Of Metal Wire
+100 1 ^B21F
+**B21G: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Making Needles, Pins Or Nails Of Metal
+100 1 ^B21G
+**B21H: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Making Particular Metal Objects By Rolling, E.G. Screws, Wheels, Rings, Barrels, Balls
+100 1 ^B21H
+**B21J: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Forging; Hammering; Pressing Metal; Riveting; Forge Furnaces
+100 1 ^B21J
+**B21K: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Making Forged Or Pressed Metal Products, E.G. Horse-Shoes, Rivets, Bolts Or Wheels
+100 1 ^B21K
+**B21L: Performing Operations; Transporting -> Mechanical Metal-Working Without Essentially Removing Material; Punching Metal -> Making Metal Chains
+100 1 ^B21L
+**B22: Performing Operations; Transporting -> Casting; Powder Metallurgy
+100 1 ^B22$
+**B22C: Performing Operations; Transporting -> Casting; Powder Metallurgy -> Foundry Moulding
+100 1 ^B22C
+**B22D: Performing Operations; Transporting -> Casting; Powder Metallurgy -> Casting Of Metals; Casting Of Other Substances By The Same Processes Or Devices
+100 1 ^B22D
+**B22F: Performing Operations; Transporting -> Casting; Powder Metallurgy -> Working Metallic Powder; Manufacture Of Articles From Metallic Powder; Making Metallic Powder; Apparatus Or Devices Specially Adapted For Metallic Powder
+100 1 ^B22F
+**B23: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For
+100 1 ^B23$
+**B23B: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Turning; Boring
+100 1 ^B23B
+**B23C: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Milling
+100 1 ^B23C
+**B23D: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Planing; Slotting; Shearing; Broaching; Sawing; Filing; Scraping; Like Operations For Working Metal By Removing Material, Not Otherwise Provided For
+100 1 ^B23D
+**B23F: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Making Gears Or Toothed Racks
+100 1 ^B23F
+**B23G: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Thread Cutting; Working Of Screws, Bolt Heads Or Nuts, In Conjunction Therewith
+100 1 ^B23G
+**B23H: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Working Of Metal By The Action Of A High Concentration Of Electric Current On A Workpiece Using An Electrode Which Takes The Place Of A Tool; Such Working Combined With Other Forms Of Working Of Metal
+100 1 ^B23H
+**B23K: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Soldering Or Unsoldering; Welding; Cladding Or Plating By Soldering Or Welding; Cutting By Applying Heat Locally, E.G. Flame Cutting; Working By Laser Beam
+100 1 ^B23K
+**B23P: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Other Working Of Metal; Combined Operations; Universal Machine Tools
+100 1 ^B23P
+**B23Q: Performing Operations; Transporting -> Machine Tools; Metal-Working Not Otherwise Provided For -> Details, Components, Or Accessories For Machine Tools, E.G. Arrangements For Copying Or Controlling; Machine Tools In General, Characterised By The Construction Of Particular Details Or Components; Combinations Or Associations Of Metal-Working Machines, Not Directed To A Particular Result
+100 1 ^B23Q
+**B24: Performing Operations; Transporting -> Grinding; Polishing
+100 1 ^B24$
+**B24B: Performing Operations; Transporting -> Grinding; Polishing -> Machines, Devices, Or Processes For Grinding Or Polishing; Dressing Or Conditioning Of Abrading Surfaces; Feeding Of Grinding, Polishing, Or Lapping Agents
+100 1 ^B24B
+**B24C: Performing Operations; Transporting -> Grinding; Polishing -> Abrasive Or Related Blasting With Particulate Material
+100 1 ^B24C
+**B24D: Performing Operations; Transporting -> Grinding; Polishing -> Tools For Grinding, Buffing Or Sharpening
+100 1 ^B24D
+**B25: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators
+100 1 ^B25$
+**B25B: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Tools Or Bench Devices Not Otherwise Provided For, For Fastening, Connecting, Disengaging, Or Holding
+100 1 ^B25B
+**B25C: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Hand-Held Nailing Or Stapling Tools; Manually-Operated Portable Stapling Tools
+100 1 ^B25C
+**B25D: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Percussive Tools
+100 1 ^B25D
+**B25F: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Combination Or Multi-Purpose Tools Not Otherwise Provided For; Details Or Components Of Portable Power-Driven Tools Not Particularly Related To The Operations Performed And Not Otherwise Provided For
+100 1 ^B25F
+**B25G: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Handles For Hand Implements
+100 1 ^B25G
+**B25H: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Workshop Equipment, E.G. For Marking-Out Work; Storage Means For Workshops
+100 1 ^B25H
+**B25J: Performing Operations; Transporting -> Hand Tools; Portable Power-Driven Tools; Handles For Hand Implements; Workshop Equipment; Manipulators -> Manipulators; Chambers Provided With Manipulation Devices
+100 1 ^B25J
+**B26: Performing Operations; Transporting -> Hand Cutting Tools; Cutting; Severing
+100 1 ^B26$
+**B26B: Performing Operations; Transporting -> Hand Cutting Tools; Cutting; Severing -> Hand-Held Cutting Tools Not Otherwise Provided For
+100 1 ^B26B
+**B26D: Performing Operations; Transporting -> Hand Cutting Tools; Cutting; Severing -> Cutting; Details Common To Machines For Perforating, Punching, Cutting-Out, Stamping-Out Or Severing
+100 1 ^B26D
+**B26F: Performing Operations; Transporting -> Hand Cutting Tools; Cutting; Severing -> Perforating; Punching; Cutting-Out; Stamping-Out; Severing By Means Other Than Cutting
+100 1 ^B26F
+**B27: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General
+100 1 ^B27$
+**B27B: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Saws For Wood Or Similar Material; Components Or Accessories Therefor
+100 1 ^B27B
+**B27C: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Planing, Drilling, Milling, Turning Or Universal Machines For Wood Or Similar Material
+100 1 ^B27C
+**B27D: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Working Veneer Or Plywood
+100 1 ^B27D
+**B27F: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Dovetailed Work; Tenons; Slotting Machines For Wood Or Similar Material; Nailing Or Stapling Machines
+100 1 ^B27F
+**B27G: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Accessory Machines Or Apparatus For Working Wood Or Similar Materials; Tools For Working Wood Or Similar Materials; Safety Devices For Wood Working Machines Or Tools
+100 1 ^B27G
+**B27H: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Bending Wood Or Similar Material; Cooperage; Making Wheels From Wood Or Similar Material
+100 1 ^B27H
+**B27J: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Mechanical Working Of Cane, Cork, Or Similar Materials
+100 1 ^B27J
+**B27K: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Processes, Apparatus Or Selection Of Substances For Impregnating, Staining, Dyeing Or Bleaching Of Wood, Or For Treating Of Wood With Permeant Liquids, Not Otherwise Provided For; Chemical Or Physical Treatment Of Cork, Cane, Reed, Straw Or Similar Materials
+100 1 ^B27K
+**B27L: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Removing Bark Or Vestiges Of Branches; Splitting Wood; Manufacture Of Veneer, Wooden Sticks, Wood Shavings, Wood Fibres Or Wood Powder
+100 1 ^B27L
+**B27M: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Working Of Wood Not Provided For In Subclasses B27b-B27l; Manufacture Of Specific Wooden Articles
+100 1 ^B27M
+**B27N: Performing Operations; Transporting -> Working Or Preserving Wood Or Similar Material; Nailing Or Stapling Machines In General -> Manufacture By Dry Processes Of Articles, With Or Without Organic Binding Agents, Made From Particles Or Fibres Consisting Of Wood Or Other Lignocellulosic Or Like Organic Material
+100 1 ^B27N
+**B28: Performing Operations; Transporting -> Working Cement, Clay, Or Stone
+100 1 ^B28$
+**B28B: Performing Operations; Transporting -> Working Cement, Clay, Or Stone -> Shaping Clay Or Other Ceramic Compositions, Slag Or Mixtures Containing Cementitious Material, E.G. Plaster
+100 1 ^B28B
+**B28C: Performing Operations; Transporting -> Working Cement, Clay, Or Stone -> Preparing Clay; Producing Mixtures Containing Clay Or Cementitious Material, E.G. Plaster
+100 1 ^B28C
+**B28D: Performing Operations; Transporting -> Working Cement, Clay, Or Stone -> Working Stone Or Stone-Like Materials
+100 1 ^B28D
+**B29: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General
+100 1 ^B29$
+**B29B: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General -> Preparation Or Pretreatment Of The Material To Be Shaped; Making Granules Or Preforms; Recovery Of Plastics Or Other Constituents Of Waste Material Containing Plastics
+100 1 ^B29B
+**B29C: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General -> Shaping Or Joining Of Plastics; Shaping Of Substances In A Plastic State, In General; After-Treatment Of The Shaped Products, E.G. Repairing
+100 1 ^B29C
+**B29D: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General -> Producing Particular Articles From Plastics Or From Substances In A Plastic State
+100 1 ^B29D
+**B29K: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General -> Indexing Scheme Associated With Subclasses B29b, B29c Or B29d, Relating To Moulding Materials Or To Materials For Reinforcements, Fillers Or Preformed Parts, E.G. Inserts
+100 1 ^B29K
+**B29L: Performing Operations; Transporting -> Working Of Plastics; Working Of Substances In A Plastic State In General -> Indexing Scheme Associated With Subclass B29c, Relating To Particular Articles
+100 1 ^B29L
+**B30: Performing Operations; Transporting -> Presses
+100 1 ^B30$
+**B30B: Performing Operations; Transporting -> Presses -> Presses In General; Presses Not Otherwise Provided For
+100 1 ^B30B
+**B31: Performing Operations; Transporting -> Making Articles Of Paper Or Cardboard; Working Paper Or Cardboard
+100 1 ^B31$
+**B31B: Performing Operations; Transporting -> Making Articles Of Paper Or Cardboard; Working Paper Or Cardboard -> Making Boxes, Cartons, Envelopes Or Bags Of Paper Or Cardboard
+100 1 ^B31B
+**B31C: Performing Operations; Transporting -> Making Articles Of Paper Or Cardboard; Working Paper Or Cardboard -> Making Wound Articles, E.G. Wound Tubes, Of Paper Or Cardboard
+100 1 ^B31C
+**B31D: Performing Operations; Transporting -> Making Articles Of Paper Or Cardboard; Working Paper Or Cardboard -> Making Articles Of Paper Or Cardboard Not Provided For In Subclasses B31b Or B31c
+100 1 ^B31D
+**B31F: Performing Operations; Transporting -> Making Articles Of Paper Or Cardboard; Working Paper Or Cardboard -> Mechanical Working Or Deformation Of Paper Or Cardboard
+100 1 ^B31F
+**B32: Performing Operations; Transporting -> Layered Products
+100 1 ^B32$
+**B32B: Performing Operations; Transporting -> Layered Products -> Layered Products, I.E. Products Built-Up Of Strata Of Flat Or Non-Flat, E.G. Cellular Or Honeycomb, Form
+100 1 ^B32B
+**B33: Performing Operations; Transporting -> Additive Manufacturing Technology
+100 1 ^B33$
+**B33Y: Performing Operations; Transporting -> Additive Manufacturing Technology -> Additive Manufacturing, I.E. Manufacturing Of Three-Dimensional [3D] Objects By Additive Deposition, Additive Agglomeration Or Additive Layering, E.G. By 3D Printing, Stereolithography Or Selective Laser Sintering
+100 1 ^B33Y
+**B41: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps
+100 1 ^B41$
+**B41B: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Machines Or Accessories For Making, Setting, Or Distributing Type; Type; Photographic Or Photoelectronic Composing Devices
+100 1 ^B41B
+**B41C: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Processes For The Manufacture Or Reproduction Of Printing Surfaces
+100 1 ^B41C
+**B41D: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Apparatus For The Mechanical Reproduction Of Printing Surfaces For Stereotype Printing; Shaping Elastic Or Deformable Material To Form Printing Surfaces
+100 1 ^B41D
+**B41F: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Printing Machines Or Presses
+100 1 ^B41F
+**B41G: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Apparatus For Bronze Printing, Line Printing, Or For Bordering Or Edging Sheets Or Like Articles; Auxiliary Apparatus For Perforating In Conjunction With Printing
+100 1 ^B41G
+**B41J: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Typewriters; Selective Printing Mechanisms, I.E. Mechanisms Printing Otherwise Than From A Forme; Correction Of Typographical Errors
+100 1 ^B41J
+**B41K: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Stamps; Stamping Or Numbering Apparatus Or Devices
+100 1 ^B41K
+**B41L: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Apparatus Or Devices For Manifolding, Duplicating, Or Printing For Office Or Other Commercial Purposes; Addressing Machines Or Like Series-Printing Machines
+100 1 ^B41L
+**B41M: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Printing, Duplicating, Marking, Or Copying Processes; Colour Printing
+100 1 ^B41M
+**B41N: Performing Operations; Transporting -> Printing; Lining Machines; Typewriters; Stamps -> Printing Plates Or Foils; Materials For Surfaces Used In Printing Machines For Printing, Inking, Damping, Or The Like; Preparing Such Surfaces For Use Or Conserving Them
+100 1 ^B41N
+**B42: Performing Operations; Transporting -> Bookbinding; Albums; Files; Special Printed Matter
+100 1 ^B42$
+**B42B: Performing Operations; Transporting -> Bookbinding; Albums; Files; Special Printed Matter -> Permanently Attaching Together Sheets, Quires, Or Signatures, Or Permanently Attaching Objects Thereto
+100 1 ^B42B
+**B42C: Performing Operations; Transporting -> Bookbinding; Albums; Files; Special Printed Matter -> Bookbinding
+100 1 ^B42C
+**B42D: Performing Operations; Transporting -> Bookbinding; Albums; Files; Special Printed Matter -> Books; Book Covers; Loose Leaves; Printed Matter Characterised By Identification Or Security Features; Printed Matter Of Special Format Or Style Not Otherwise Provided For; Devices For Use Therewith And Not Otherwise Provided For; Movable-Strip Writing Or Reading Apparatus
+100 1 ^B42D
+**B42F: Performing Operations; Transporting -> Bookbinding; Albums; Files; Special Printed Matter -> Sheets Temporarily Attached Together; Filing Appliances; File Cards; Indexing
+100 1 ^B42F
+**B43: Performing Operations; Transporting -> Writing Or Drawing Implements; Bureau Accessories
+100 1 ^B43$
+**B43K: Performing Operations; Transporting -> Writing Or Drawing Implements; Bureau Accessories -> Implements For Writing Or Drawing
+100 1 ^B43K
+**B43L: Performing Operations; Transporting -> Writing Or Drawing Implements; Bureau Accessories -> Articles For Writing Or Drawing Upon; Accessories For Writing Or Drawing
+100 1 ^B43L
+**B43M: Performing Operations; Transporting -> Writing Or Drawing Implements; Bureau Accessories -> Bureau Accessories Not Otherwise Provided For
+100 1 ^B43M
+**B44: Performing Operations; Transporting -> Decorative Arts
+100 1 ^B44$
+**B44B: Performing Operations; Transporting -> Decorative Arts -> Machines, Apparatus Or Tools For Artistic Work, E.G. For Sculpturing, Guilloching, Carving, Branding Or Inlaying
+100 1 ^B44B
+**B44C: Performing Operations; Transporting -> Decorative Arts -> Producing Decorative Effects; Mosaics; Tarsia Work; Paperhanging
+100 1 ^B44C
+**B44D: Performing Operations; Transporting -> Decorative Arts -> Painting Or Artistic Drawing, Not Otherwise Provided For; Preserving Paintings; Surface Treatment To Obtain Special Artistic Surface Effects Or Finishes
+100 1 ^B44D
+**B44F: Performing Operations; Transporting -> Decorative Arts -> Special Designs Or Pictures
+100 1 ^B44F
+**B60: Performing Operations; Transporting -> Vehicles In General
+100 1 ^B60$
+**B60B: Performing Operations; Transporting -> Vehicles In General -> Vehicle Wheels; Castors; Axles For Wheels Or Castors; Increasing Wheel Adhesion
+100 1 ^B60B
+**B60C: Performing Operations; Transporting -> Vehicles In General -> Vehicle Tyres; Tyre Inflation; Tyre Changing; Connecting Valves To Inflatable Elastic Bodies In General; Devices Or Arrangements Related To Tyres
+100 1 ^B60C
+**B60D: Performing Operations; Transporting -> Vehicles In General -> Vehicle Connections
+100 1 ^B60D
+**B60F: Performing Operations; Transporting -> Vehicles In General -> Vehicles For Use Both On Rail And On Road; Vehicles Capable Of Travelling In Or On Different Media, E.G. Amphibious Vehicles
+100 1 ^B60F
+**B60G: Performing Operations; Transporting -> Vehicles In General -> Vehicle Suspension Arrangements
+100 1 ^B60G
+**B60H: Performing Operations; Transporting -> Vehicles In General -> Arrangements Or Adaptations Of Heating, Cooling, Ventilating, Or Other Air-Treating Devices Specially For Passenger Or Goods Spaces Of Vehicles
+100 1 ^B60H
+**B60J: Performing Operations; Transporting -> Vehicles In General -> Windows, Windscreens, Non-Fixed Roofs, Doors, Or Similar Devices For Vehicles; Removable External Protective Coverings Specially Adapted For Vehicles
+100 1 ^B60J
+**B60K: Performing Operations; Transporting -> Vehicles In General -> Arrangement Or Mounting Of Propulsion Units Or Of Transmissions In Vehicles; Arrangement Or Mounting Of Plural Diverse Prime-Movers In Vehicles; Auxiliary Drives For Vehicles; Instrumentation Or Dashboards For Vehicles; Arrangements In Connection With Cooling, Air Intake, Gas Exhaust Or Fuel Supply Of Propulsion Units In Vehicles
+100 1 ^B60K
+**B60L: Performing Operations; Transporting -> Vehicles In General -> Propulsion Of Electrically-Propelled Vehicles; Supplying Electric Power For Auxiliary Equipment Of Electrically-Propelled Vehicles; Electrodynamic Brake Systems For Vehicles In General; Magnetic Suspension Or Levitation For Vehicles; Monitoring Operating Variables Of Electrically-Propelled Vehicles; Electric Safety Devices For Electrically-Propelled Vehicles
+100 1 ^B60L
+**B60M: Performing Operations; Transporting -> Vehicles In General -> Power Supply Lines, Or Devices Along Rails, For Electrically-Propelled Vehicles
+100 1 ^B60M
+**B60N: Performing Operations; Transporting -> Vehicles In General -> Vehicle Passenger Accommodation Not Otherwise Provided For
+100 1 ^B60N
+**B60P: Performing Operations; Transporting -> Vehicles In General -> Vehicles Adapted For Load Transportation Or To Transport, To Carry, Or To Comprise Special Loads Or Objects
+100 1 ^B60P
+**B60Q: Performing Operations; Transporting -> Vehicles In General -> Arrangement Of Signalling Or Lighting Devices, The Mounting Or Supporting Thereof Or Circuits Therefor, For Vehicles In General
+100 1 ^B60Q
+**B60R: Performing Operations; Transporting -> Vehicles In General -> Vehicles, Vehicle Fittings, Or Vehicle Parts, Not Otherwise Provided For
+100 1 ^B60R
+**B60S: Performing Operations; Transporting -> Vehicles In General -> Servicing, Cleaning, Repairing, Supporting, Lifting, Or Manoeuvring Of Vehicles, Not Otherwise Provided For
+100 1 ^B60S
+**B60T: Performing Operations; Transporting -> Vehicles In General -> Vehicle Brake Control Systems Or Parts Thereof; Brake Control Systems Or Parts Thereof, In General; Arrangement Of Braking Elements On Vehicles In General; Portable Devices For Preventing Unwanted Movement Of Vehicles; Vehicle Modifications To Facilitate Cooling Of Brakes
+100 1 ^B60T
+**B60V: Performing Operations; Transporting -> Vehicles In General -> Air-Cushion Vehicles
+100 1 ^B60V
+**B60W: Performing Operations; Transporting -> Vehicles In General -> Conjoint Control Of Vehicle Sub-Units Of Different Type Or Different Function; Control Systems Specially Adapted For Hybrid Vehicles; Road Vehicle Drive Control Systems For Purposes Not Related To The Control Of A Particular Sub-Unit
+100 1 ^B60W
+**B61: Performing Operations; Transporting -> Railways
+100 1 ^B61$
+**B61B: Performing Operations; Transporting -> Railways -> Railway Systems; Equipment Therefor Not Otherwise Provided For
+100 1 ^B61B
+**B61C: Performing Operations; Transporting -> Railways -> Locomotives; Motor Railcars
+100 1 ^B61C
+**B61D: Performing Operations; Transporting -> Railways -> Body Details Or Kinds Of Railway Vehicles
+100 1 ^B61D
+**B61F: Performing Operations; Transporting -> Railways -> Rail Vehicle Suspensions, E.G. Underframes, Bogies Or Arrangements Of Wheel Axles; Rail Vehicles For Use On Tracks Of Different Width; Preventing Derailing Of Rail Vehicles; Wheel Guards, Obstruction Removers Or The Like For Rail Vehicles
+100 1 ^B61F
+**B61G: Performing Operations; Transporting -> Railways -> Couplings Specially Adapted For Railway Vehicles; Draught Or Buffing Appliances Specially Adapted For Railway Vehicles
+100 1 ^B61G
+**B61H: Performing Operations; Transporting -> Railways -> Brakes Or Other Retarding Apparatus Peculiar To Rail Vehicles; Arrangements Or Dispositions Of Brakes Or Other Retarding Apparatus In Rail Vehicles
+100 1 ^B61H
+**B61J: Performing Operations; Transporting -> Railways -> Shifting Or Shunting Of Rail Vehicles
+100 1 ^B61J
+**B61K: Performing Operations; Transporting -> Railways -> Other Auxiliary Equipment For Railways
+100 1 ^B61K
+**B61L: Performing Operations; Transporting -> Railways -> Guiding Railway Traffic; Ensuring The Safety Of Railway Traffic
+100 1 ^B61L
+**B62: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails
+100 1 ^B62$
+**B62B: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Hand-Propelled Vehicles, E.G. Hand Carts Or Perambulators; Sledges
+100 1 ^B62B
+**B62C: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Vehicles Drawn By Animals
+100 1 ^B62C
+**B62D: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Motor Vehicles; Trailers
+100 1 ^B62D
+**B62H: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Cycle Stands; Supports Or Holders For Parking Or Storing Cycles; Appliances Preventing Or Indicating Unauthorised Use Or Theft Of Cycles; Locks Integral With Cycles; Devices For Learning To Ride Cycles
+100 1 ^B62H
+**B62J: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Cycle Saddles Or Seats; Accessories Peculiar To Cycles And Not Otherwise Provided For, E.G. Article Carriers Or Cycle Protectors
+100 1 ^B62J
+**B62K: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Cycles; Cycle Frames; Cycle Steering Devices; Rider-Operated Terminal Controls Specially Adapted For Cycles; Cycle Axle Suspensions; Cycle Sidecars, Forecars, Or The Like
+100 1 ^B62K
+**B62L: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Brakes Specially Adapted For Cycles
+100 1 ^B62L
+**B62M: Performing Operations; Transporting -> Land Vehicles For Travelling Otherwise Than On Rails -> Rider Propulsion Of Wheeled Vehicles Or Sledges; Powered Propulsion Of Sledges Or Cycles; Transmissions Specially Adapted For Such Vehicles
+100 1 ^B62M
+**B63: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment
+100 1 ^B63$
+**B63B: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment -> Ships Or Other Waterborne Vessels; Equipment For Shipping
+100 1 ^B63B
+**B63C: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment -> Launching, Hauling-Out, Or Dry-Docking Of Vessels; Life-Saving In Water; Equipment For Dwelling Or Working Under Water; Means For Salvaging Or Searching For Underwater Objects
+100 1 ^B63C
+**B63G: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment -> Offensive Or Defensive Arrangements On Vessels; Mine-Laying; Mine-Sweeping; Submarines; Aircraft Carriers
+100 1 ^B63G
+**B63H: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment -> Marine Propulsion Or Steering
+100 1 ^B63H
+**B63J: Performing Operations; Transporting -> Ships Or Other Waterborne Vessels; Related Equipment -> Auxiliaries On Vessels
+100 1 ^B63J
+**B64: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics
+100 1 ^B64$
+**B64B: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics -> Lighter-Than-Air Aircraft
+100 1 ^B64B
+**B64C: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics -> Aeroplanes; Helicopters
+100 1 ^B64C
+**B64D: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics -> Equipment For Fitting In Or To Aircraft; Flying Suits; Parachutes; Arrangements Or Mounting Of Power Plants Or Propulsion Transmissions In Aircraft
+100 1 ^B64D
+**B64F: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics -> Ground Or Aircraft-Carrier-Deck Installations Specially Adapted For Use In Connection With Aircraft; Designing, Manufacturing, Assembling, Cleaning, Maintaining Or Repairing Aircraft, Not Otherwise Provided For
+100 1 ^B64F
+**B64G: Performing Operations; Transporting -> Aircraft; Aviation; Cosmonautics -> Cosmonautics; Vehicles Or Equipment Therefor
+100 1 ^B64G
+**B65: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material
+100 1 ^B65$
+**B65B: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Machines, Apparatus Or Devices For, Or Methods Of, Packaging Articles Or Materials; Unpacking
+100 1 ^B65B
+**B65C: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Labelling Or Tagging Machines, Apparatus, Or Processes
+100 1 ^B65C
+**B65D: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Containers For Storage Or Transport Of Articles Or Materials, E.G. Bags, Barrels, Bottles, Boxes, Cans, Cartons, Crates, Drums, Jars, Tanks, Hoppers, Forwarding Containers; Accessories, Closures, Or Fittings Therefor; Packaging Elements; Packages
+100 1 ^B65D
+**B65F: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Gathering Or Removal Of Domestic Or Like Refuse
+100 1 ^B65F
+**B65G: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Transport Or Storage Devices, E.G. Conveyors For Loading Or Tipping, Shop Conveyor Systems Or Pneumatic Tube Conveyors
+100 1 ^B65G
+**B65H: Performing Operations; Transporting -> Conveying; Packing; Storing; Handling Thin Or Filamentary Material -> Handling Thin Or Filamentary Material, E.G. Sheets, Webs, Cables
+100 1 ^B65H
+**B66: Performing Operations; Transporting -> Hoisting; Lifting; Hauling
+100 1 ^B66$
+**B66B: Performing Operations; Transporting -> Hoisting; Lifting; Hauling -> Elevators; Escalators Or Moving Walkways
+100 1 ^B66B
+**B66C: Performing Operations; Transporting -> Hoisting; Lifting; Hauling -> Cranes; Load-Engaging Elements Or Devices For Cranes, Capstans, Winches, Or Tackles
+100 1 ^B66C
+**B66D: Performing Operations; Transporting -> Hoisting; Lifting; Hauling -> Capstans; Winches; Tackles, E.G. Pulley Blocks; Hoists
+100 1 ^B66D
+**B66F: Performing Operations; Transporting -> Hoisting; Lifting; Hauling -> Hoisting, Lifting, Hauling, Or Pushing, Not Otherwise Provided For, E.G. Devices Which Apply A Lifting Or Pushing Force Directly To The Surface Of A Load
+100 1 ^B66F
+**B67: Performing Operations; Transporting -> Opening Or Closing Bottles, Jars Or Similar Containers; Liquid Handling
+100 1 ^B67$
+**B67B: Performing Operations; Transporting -> Opening Or Closing Bottles, Jars Or Similar Containers; Liquid Handling -> Applying Closure Members To Bottles, Jars, Or Similar Containers; Opening Closed Containers
+100 1 ^B67B
+**B67C: Performing Operations; Transporting -> Opening Or Closing Bottles, Jars Or Similar Containers; Liquid Handling -> Filling With Liquids Or Semiliquids, Or Emptying, Of Bottles, Jars, Cans, Casks, Barrels, Or Similar Containers, Not Otherwise Provided For; Funnels
+100 1 ^B67C
+**B67D: Performing Operations; Transporting -> Opening Or Closing Bottles, Jars Or Similar Containers; Liquid Handling -> Dispensing, Delivering, Or Transferring Liquids, Not Otherwise Provided For
+100 1 ^B67D
+**B68: Performing Operations; Transporting -> Saddlery; Upholstery
+100 1 ^B68$
+**B68B: Performing Operations; Transporting -> Saddlery; Upholstery -> Harness; Devices Used In Connection Therewith; Whips Or The Like
+100 1 ^B68B
+**B68C: Performing Operations; Transporting -> Saddlery; Upholstery -> Saddles; Stirrups
+100 1 ^B68C
+**B68F: Performing Operations; Transporting -> Saddlery; Upholstery -> Making Articles From Leather, Canvas, Or The Like
+100 1 ^B68F
+**B68G: Performing Operations; Transporting -> Saddlery; Upholstery -> Methods, Equipment, Or Machines For Use In Upholstering; Upholstery Not Otherwise Provided For
+100 1 ^B68G
+**B81: Performing Operations; Transporting -> Micro-Structural Technology
+100 1 ^B81$
+**B81B: Performing Operations; Transporting -> Micro-Structural Technology -> Micro-Structural Devices Or Systems, E.G. Micro-Mechanical Devices
+100 1 ^B81B
+**B81C: Performing Operations; Transporting -> Micro-Structural Technology -> Processes Or Apparatus Specially Adapted For The Manufacture Or Treatment Of Micro-Structural Devices Or Systems
+100 1 ^B81C
+**B82: Performing Operations; Transporting -> Nano-Technology
+100 1 ^B82$
+**B82B: Performing Operations; Transporting -> Nano-Technology -> Nano-Structures Formed By Manipulation Of Individual Atoms, Molecules, Or Limited Collections Of Atoms Or Molecules As Discrete Units; Manufacture Or Treatment Thereof
+100 1 ^B82B
+**B82Y: Performing Operations; Transporting -> Nano-Technology -> Specific Uses Or Applications Of Nano-Structures; Measurement Or Analysis Of Nano-Structures; Manufacture  Or Treatment Of Nano-Structures
+100 1 ^B82Y
+**B99: Performing Operations; Transporting -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^B99$
+**B99Z: Performing Operations; Transporting -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^B99Z
+**C01: Chemistry; Metallurgy -> Inorganic Chemistry
+100 1 ^C01$
+**C01B: Chemistry; Metallurgy -> Inorganic Chemistry -> Non-Metallic Elements; Compounds Thereof
+100 1 ^C01B
+**C01C: Chemistry; Metallurgy -> Inorganic Chemistry -> Ammonia; Cyanogen; Compounds Thereof
+100 1 ^C01C
+**C01D: Chemistry; Metallurgy -> Inorganic Chemistry -> Compounds Of Alkali Metals, I.E. Lithium, Sodium, Potassium, Rubidium, Caesium, Or Francium
+100 1 ^C01D
+**C01F: Chemistry; Metallurgy -> Inorganic Chemistry -> Compounds Of The Metals Beryllium, Magnesium, Aluminium, Calcium, Strontium, Barium, Radium, Thorium, Or Of The Rare-Earth Metals
+100 1 ^C01F
+**C01G: Chemistry; Metallurgy -> Inorganic Chemistry -> Compounds Containing Metals Not Covered By Subclasses C01d Or C01f
+100 1 ^C01G
+**C02: Chemistry; Metallurgy -> Treatment Of Water, Waste Water, Sewage, Or Sludge
+100 1 ^C02$
+**C02F: Chemistry; Metallurgy -> Treatment Of Water, Waste Water, Sewage, Or Sludge -> Treatment Of Water, Waste Water, Sewage, Or Sludge
+100 1 ^C02F
+**C03: Chemistry; Metallurgy -> Glass; Mineral Or Slag Wool
+100 1 ^C03$
+**C03B: Chemistry; Metallurgy -> Glass; Mineral Or Slag Wool -> Manufacture Or Shaping Of Glass, Or Of Mineral Or Slag Wool; Supplementary Processes In The Manufacture Or Shaping Of Glass, Or Of Mineral Or Slag Wool
+100 1 ^C03B
+**C03C: Chemistry; Metallurgy -> Glass; Mineral Or Slag Wool -> Chemical Composition Of Glasses, Glazes, Or Vitreous Enamels; Surface Treatment Of Glass; Surface Treatment Of Fibres Or Filaments From Glass, Minerals Or Slags; Joining Glass To Glass Or Other Materials
+100 1 ^C03C
+**C04: Chemistry; Metallurgy -> Cements; Concrete; Artificial Stone; Ceramics; Refractories
+100 1 ^C04$
+**C04B: Chemistry; Metallurgy -> Cements; Concrete; Artificial Stone; Ceramics; Refractories -> Lime; Magnesia; Slag; Cements; Compositions Thereof, E.G. Mortars, Concrete Or Like Building Materials; Artificial Stone; Ceramics; Refractories; Treatment Of Natural Stone
+100 1 ^C04B
+**C05: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof
+100 1 ^C05$
+**C05B: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof -> Phosphatic Fertilisers
+100 1 ^C05B
+**C05C: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof -> Nitrogenous Fertilisers
+100 1 ^C05C
+**C05D: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof -> Inorganic Fertilisers Not Covered By Subclasses C05b, C05c; Fertilisers Producing Carbon Dioxide
+100 1 ^C05D
+**C05F: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof -> Organic Fertilisers Not Covered By Subclasses C05b, C05c, E.G. Fertilisers From Waste Or Refuse
+100 1 ^C05F
+**C05G: Chemistry; Metallurgy -> Fertilisers; Manufacture Thereof -> Mixtures Of Fertilisers Covered Individually By Different Subclasses Of Class C05; Mixtures Of One Or More Fertilisers With Materials Not Having A Specific Fertilising Activity, E.G. Pesticides, Soil-Conditioners, Wetting Agents; Fertilisers Characterised By Their Form
+100 1 ^C05G
+**C06: Chemistry; Metallurgy -> Explosives; Matches
+100 1 ^C06$
+**C06B: Chemistry; Metallurgy -> Explosives; Matches -> Explosive Or Thermic Compositions; Manufacture Thereof; Use Of Single Substances As Explosives
+100 1 ^C06B
+**C06C: Chemistry; Metallurgy -> Explosives; Matches -> Detonating Or Priming Devices; Fuses; Chemical Lighters; Pyrophoric Compositions
+100 1 ^C06C
+**C06D: Chemistry; Metallurgy -> Explosives; Matches -> Means For Generating Smoke Or Mist; Gas-Attack Compositions; Generation Of Gas For Blasting Or Propulsion (Chemical Part)
+100 1 ^C06D
+**C06F: Chemistry; Metallurgy -> Explosives; Matches -> Matches; Manufacture Of Matches
+100 1 ^C06F
+**C07: Chemistry; Metallurgy -> Organic Chemistry
+100 1 ^C07$
+**C07B: Chemistry; Metallurgy -> Organic Chemistry -> General Methods Of Organic Chemistry; Apparatus Therefor
+100 1 ^C07B
+**C07C: Chemistry; Metallurgy -> Organic Chemistry -> Acyclic Or Carbocyclic Compounds
+100 1 ^C07C
+**C07D: Chemistry; Metallurgy -> Organic Chemistry -> Heterocyclic Compounds
+100 1 ^C07D
+**C07F: Chemistry; Metallurgy -> Organic Chemistry -> Acyclic, Carbocyclic, Or Heterocyclic Compounds Containing Elements Other Than Carbon, Hydrogen, Halogen, Oxygen, Nitrogen, Sulfur, Selenium Or Tellurium
+100 1 ^C07F
+**C07G: Chemistry; Metallurgy -> Organic Chemistry -> Compounds Of Unknown Constitution
+100 1 ^C07G
+**C07H: Chemistry; Metallurgy -> Organic Chemistry -> Sugars; Derivatives Thereof; Nucleosides; Nucleotides; Nucleic Acids
+100 1 ^C07H
+**C07J: Chemistry; Metallurgy -> Organic Chemistry -> Steroids
+100 1 ^C07J
+**C07K: Chemistry; Metallurgy -> Organic Chemistry -> Peptides
+100 1 ^C07K
+**C08: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon
+100 1 ^C08$
+**C08B: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Polysaccharides; Derivatives Thereof
+100 1 ^C08B
+**C08C: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Treatment Or Chemical Modification Of Rubbers
+100 1 ^C08C
+**C08F: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Macromolecular Compounds Obtained By Reactions Only Involving Carbon-To-Carbon Unsaturated Bonds
+100 1 ^C08F
+**C08G: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Macromolecular Compounds Obtained Otherwise Than By Reactions Only Involving Carbon-To-Carbon Unsaturated Bonds
+100 1 ^C08G
+**C08H: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Derivatives Of Natural Macromolecular Compounds
+100 1 ^C08H
+**C08J: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Working-Up; General Processes Of Compounding; After-Treatment Not Covered By Subclasses C08b, C08c, C08f, C08g Or C08h
+100 1 ^C08J
+**C08K: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Use Of Inorganic Or Non-Macromolecular Organic Substances As Compounding Ingredients
+100 1 ^C08K
+**C08L: Chemistry; Metallurgy -> Organic Macromolecular Compounds; Their Preparation Or Chemical Working-Up; Compositions Based Thereon -> Compositions Of Macromolecular Compounds
+100 1 ^C08L
+**C09: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For
+100 1 ^C09$
+**C09B: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Organic Dyes Or Closely-Related Compounds For Producing Dyes; Mordants; Lakes
+100 1 ^C09B
+**C09C: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Treatment Of Inorganic Materials, Other Than Fibrous Fillers, To Enhance Their Pigmenting Or Filling Properties; Preparation Of Carbon Black
+100 1 ^C09C
+**C09D: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Coating Compositions, E.G. Paints, Varnishes Or Lacquers; Filling Pastes; Chemical Paint Or Ink Removers; Inks; Correcting Fluids; Woodstains; Pastes Or Solids For Colouring Or Printing; Use Of Materials Therefor
+100 1 ^C09D
+**C09F: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Natural Resins; French Polish; Drying-Oils; Driers (Siccatives); Turpentine
+100 1 ^C09F
+**C09G: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Polishing Compositions Other Than French Polish; Ski Waxes
+100 1 ^C09G
+**C09H: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Preparation Of Glue Or Gelatine
+100 1 ^C09H
+**C09J: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Adhesives; Non-Mechanical Aspects Of Adhesive Processes In General; Adhesive Processes Not Provided For Elsewhere; Use Of Materials As Adhesives
+100 1 ^C09J
+**C09K: Chemistry; Metallurgy -> Dyes; Paints; Polishes; Natural Resins; Adhesives; Compositions Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For -> Materials For Applications Not Otherwise Provided For; Applications Of Materials Not Otherwise Provided For
+100 1 ^C09K
+**C10: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat
+100 1 ^C10$
+**C10B: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Destructive Distillation Of Carbonaceous Materials For Production Of Gas, Coke, Tar, Or Similar Materials
+100 1 ^C10B
+**C10C: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Working-Up Tar, Pitch, Asphalt, Bitumen; Pyroligneous Acid
+100 1 ^C10C
+**C10F: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Drying Or Working-Up Of Peat
+100 1 ^C10F
+**C10G: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Cracking Hydrocarbon Oils; Production Of Liquid Hydrocarbon Mixtures, E.G. By Destructive Hydrogenation, Oligomerisation, Polymerisation; Recovery Of Hydrocarbon Oils From Oil-Shale, Oil-Sand, Or Gases; Refining Mixtures Mainly Consisting Of Hydrocarbons; Reforming Of Naphtha; Mineral Waxes
+100 1 ^C10G
+**C10H: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Production Of Acetylene By Wet Methods
+100 1 ^C10H
+**C10J: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Production Of Gases Containing Carbon Monoxide And Hydrogen From Solid Carbonaceous Materials By Partial Oxidation Processes Involving Oxygen Or Steam ; Carburetting Air Or Other Gases
+100 1 ^C10J
+**C10K: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Purifying Or Modifying The Chemical Composition Of Combustible Gases Containing Carbon Monoxide
+100 1 ^C10K
+**C10L: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Fuels Not Otherwise Provided For; Natural Gas; Synthetic Natural Gas Obtained By Processes Not Covered By Subclasses C10g Or  C10k; Liquefied Petroleum Gas;  Use Of Additives To Fuels Or Fires;  Fire-Lighters
+100 1 ^C10L
+**C10M: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Lubricating Compositions; Use Of Chemical Substances Either Alone Or As Lubricating Ingredients In A Lubricating Composition
+100 1 ^C10M
+**C10N: Chemistry; Metallurgy -> Petroleum, Gas Or Coke Industries; Technical Gases Containing Carbon Monoxide; Fuels; Lubricants; Peat -> Indexing Scheme Associated With Subclass C10m
+100 1 ^C10N
+**C11: Chemistry; Metallurgy -> Animal Or Vegetable Oils, Fats, Fatty Substances Or Waxes; Fatty Acids Therefrom; Detergents; Candles
+100 1 ^C11$
+**C11B: Chemistry; Metallurgy -> Animal Or Vegetable Oils, Fats, Fatty Substances Or Waxes; Fatty Acids Therefrom; Detergents; Candles -> Producing, E.G. By Pressing Raw Materials Or By Extraction From Waste Materials, Refining Or Preserving Fats, Fatty Substances, E.G. Lanolin, Fatty Oils Or Waxes; Essential Oils; Perfumes
+100 1 ^C11B
+**C11C: Chemistry; Metallurgy -> Animal Or Vegetable Oils, Fats, Fatty Substances Or Waxes; Fatty Acids Therefrom; Detergents; Candles -> Fatty Acids Obtained From Fats, Oils Or Waxes; Candles; Fats, Oils Or Fatty Acids Obtained By Chemical Modification Of Fats, Oils Or Fatty Acids
+100 1 ^C11C
+**C11D: Chemistry; Metallurgy -> Animal Or Vegetable Oils, Fats, Fatty Substances Or Waxes; Fatty Acids Therefrom; Detergents; Candles -> Detergent Compositions; Use Of Single Substances As Detergents; Soap Or Soap-Making; Resin Soaps; Recovery Of Glycerol
+100 1 ^C11D
+**C12: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering
+100 1 ^C12$
+**C12C: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Brewing Of Beer
+100 1 ^C12C
+**C12F: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Recovery Of By-Products Of Fermented Solutions; Denaturing Of, Or Denatured, Alcohol
+100 1 ^C12F
+**C12G: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Wine; Other Alcoholic Beverages; Preparation Thereof
+100 1 ^C12G
+**C12H: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Pasteurisation, Sterilisation, Preservation, Purification, Clarification, Ageing Of Alcoholic Beverages Or Removal Of Alcohol Therefrom
+100 1 ^C12H
+**C12J: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Vinegar; Its Preparation
+100 1 ^C12J
+**C12L: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Pitching Or Depitching Machines; Cellar Tools
+100 1 ^C12L
+**C12M: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Apparatus For Enzymology Or Microbiology
+100 1 ^C12M
+**C12N: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Micro-Organisms Or Enzymes; Compositions Thereof; Propagating, Preserving, Or Maintaining Micro-Organisms; Mutation Or Genetic Engineering; Culture Media
+100 1 ^C12N
+**C12P: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Fermentation Or Enzyme-Using Processes To Synthesise A Desired Chemical Compound Or Composition Or To Separate Optical Isomers From A Racemic Mixture
+100 1 ^C12P
+**C12Q: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Measuring Or Testing Processes Involving Enzymes Or Micro-Organisms; Compositions Or Test Papers Therefor; Processes Of Preparing Such Compositions; Condition-Responsive Control In Microbiological Or Enzymological Processes
+100 1 ^C12Q
+**C12R: Chemistry; Metallurgy -> Biochemistry; Beer; Spirits; Wine; Vinegar; Microbiology; Enzymology; Mutation Or Genetic Engineering -> Indexing Scheme Associated With Subclasses C12c-C12q, Relating To Micro-Organisms
+100 1 ^C12R
+**C13: Chemistry; Metallurgy -> Sugar Industry
+100 1 ^C13$
+**C13B: Chemistry; Metallurgy -> Sugar Industry -> Production Of Sucrose; Apparatus Specially Adapted Therefor
+100 1 ^C13B
+**C13K: Chemistry; Metallurgy -> Sugar Industry -> Saccharides, Other Than Sucrose, Obtained From Natural Sources Or By Hydrolysis Of Naturally Occurring Di-, Oligo- Or Polysaccharides
+100 1 ^C13K
+**C14: Chemistry; Metallurgy -> Skins; Hides; Pelts; Leather
+100 1 ^C14$
+**C14B: Chemistry; Metallurgy -> Skins; Hides; Pelts; Leather -> Mechanical Treatment Or Processing Of Skins, Hides, Or Leather In General; Pelt-Shearing Machines; Intestine-Splitting Machines
+100 1 ^C14B
+**C14C: Chemistry; Metallurgy -> Skins; Hides; Pelts; Leather -> Treating Skins, Hides Or Leather With Chemicals, Enzymes Or Micro-Organisms, E.G. Tanning, Impregnating Or Finishing; Apparatus Therefor; Compositions For Tanning
+100 1 ^C14C
+**C21: Chemistry; Metallurgy -> Metallurgy Of Iron
+100 1 ^C21$
+**C21B: Chemistry; Metallurgy -> Metallurgy Of Iron -> Manufacture Of Iron Or Steel
+100 1 ^C21B
+**C21C: Chemistry; Metallurgy -> Metallurgy Of Iron -> Processing Of Pig-Iron, E.G. Refining, Manufacture Of Wrought-Iron Or Steel; Treatment In Molten State Of Ferrous Alloys
+100 1 ^C21C
+**C21D: Chemistry; Metallurgy -> Metallurgy Of Iron -> Modifying The Physical Structure Of Ferrous Metals; General Devices For Heat Treatment Of Ferrous Or Non-Ferrous Metals Or Alloys; Making Metal Malleable By Decarburisation, Tempering, Or Other Treatments
+100 1 ^C21D
+**C22: Chemistry; Metallurgy -> Metallurgy; Ferrous Or Non-Ferrous Alloys; Treatment Of Alloys Or Non-Ferrous Metals
+100 1 ^C22$
+**C22B: Chemistry; Metallurgy -> Metallurgy; Ferrous Or Non-Ferrous Alloys; Treatment Of Alloys Or Non-Ferrous Metals -> Production Or Refining Of Metals; Pretreatment Of Raw Materials
+100 1 ^C22B
+**C22C: Chemistry; Metallurgy -> Metallurgy; Ferrous Or Non-Ferrous Alloys; Treatment Of Alloys Or Non-Ferrous Metals -> Alloys
+100 1 ^C22C
+**C22F: Chemistry; Metallurgy -> Metallurgy; Ferrous Or Non-Ferrous Alloys; Treatment Of Alloys Or Non-Ferrous Metals -> Changing The Physical Structure Of Non-Ferrous Metals Or Non-Ferrous Alloys
+100 1 ^C22F
+**C23: Chemistry; Metallurgy -> Coating Metallic Material; Coating Material With Metallic Material; Chemical Surface Treatment; Diffusion Treatment Of Metallic Material; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General; Inhibiting Corrosion Of Metallic Material Or Incrustation In General
+100 1 ^C23$
+**C23C: Chemistry; Metallurgy -> Coating Metallic Material; Coating Material With Metallic Material; Chemical Surface Treatment; Diffusion Treatment Of Metallic Material; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General; Inhibiting Corrosion Of Metallic Material Or Incrustation In General -> Coating Metallic Material; Coating Material With Metallic Material; Surface Treatment Of Metallic Material By Diffusion Into The Surface, By Chemical Conversion Or Substitution; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General
+100 1 ^C23C
+**C23D: Chemistry; Metallurgy -> Coating Metallic Material; Coating Material With Metallic Material; Chemical Surface Treatment; Diffusion Treatment Of Metallic Material; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General; Inhibiting Corrosion Of Metallic Material Or Incrustation In General -> Enamelling Of, Or Applying A Vitreous Layer To, Metals
+100 1 ^C23D
+**C23F: Chemistry; Metallurgy -> Coating Metallic Material; Coating Material With Metallic Material; Chemical Surface Treatment; Diffusion Treatment Of Metallic Material; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General; Inhibiting Corrosion Of Metallic Material Or Incrustation In General -> Non-Mechanical Removal Of Metallic Material From Surfaces; Inhibiting Corrosion Of Metallic Material; Inhibiting Incrustation In General; Multi-Step Processes For Surface Treatment Of Metallic Material Involving At Least One Process Provided For In Class C23 And At Least One Process Covered By Subclass C21d Or C22f Or Class C25
+100 1 ^C23F
+**C23G: Chemistry; Metallurgy -> Coating Metallic Material; Coating Material With Metallic Material; Chemical Surface Treatment; Diffusion Treatment Of Metallic Material; Coating By Vacuum Evaporation, By Sputtering, By Ion Implantation Or By Chemical Vapour Deposition, In General; Inhibiting Corrosion Of Metallic Material Or Incrustation In General -> Cleaning Or De-Greasing Of Metallic Material By Chemical Methods Other Than Electrolysis
+100 1 ^C23G
+**C25: Chemistry; Metallurgy -> Electrolytic Or Electrophoretic Processes; Apparatus Therefor
+100 1 ^C25$
+**C25B: Chemistry; Metallurgy -> Electrolytic Or Electrophoretic Processes; Apparatus Therefor -> Electrolytic Or Electrophoretic Processes For The Production Of Compounds Or Non- Metals; Apparatus Therefor
+100 1 ^C25B
+**C25C: Chemistry; Metallurgy -> Electrolytic Or Electrophoretic Processes; Apparatus Therefor -> Processes For The Electrolytic Production, Recovery Or Refining Of Metals; Apparatus Therefor
+100 1 ^C25C
+**C25D: Chemistry; Metallurgy -> Electrolytic Or Electrophoretic Processes; Apparatus Therefor -> Processes For The Electrolytic Or Electrophoretic Production Of Coatings; Electroforming; Joining Workpieces By Electrolysis; Apparatus Therefor
+100 1 ^C25D
+**C25F: Chemistry; Metallurgy -> Electrolytic Or Electrophoretic Processes; Apparatus Therefor -> Processes For The Electrolytic Removal Of Materials From Objects; Apparatus Therefor
+100 1 ^C25F
+**C30: Chemistry; Metallurgy -> Crystal Growth
+100 1 ^C30$
+**C30B: Chemistry; Metallurgy -> Crystal Growth -> Single-Crystal Growth; Unidirectional Solidification Of Eutectic Material Or Unidirectional Demixing Of Eutectoid Material; Refining By Zone-Melting Of Material; Production Of A Homogeneous Polycrystalline Material With Defined Structure; Single Crystals Or Homogeneous Polycrystalline Material With Defined Structure; After-Treatment Of Single Crystals Or A Homogeneous Polycrystalline Material With Defined Structure; Apparatus Therefor
+100 1 ^C30B
+**C40: Chemistry; Metallurgy -> Combinatorial Technology
+100 1 ^C40$
+**C40B: Chemistry; Metallurgy -> Combinatorial Technology -> Combinatorial Chemistry; Libraries, E.G. Chemical Libraries, <U>In Silico</U> Libraries
+100 1 ^C40B
+**C99: Chemistry; Metallurgy -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^C99$
+**C99Z: Chemistry; Metallurgy -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^C99Z
+**D01: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning
+100 1 ^D01$
+**D01B: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Mechanical Treatment Of Natural Fibrous Or Filamentary Material To Obtain Fibres Or Filaments, E.G. For Spinning
+100 1 ^D01B
+**D01C: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Chemical Or Biological Treatment Of Natural Filamentary Or Fibrous Material To Obtain Filaments Or Fibres For Spinning; Carbonising Rags To Recover Animal Fibres
+100 1 ^D01C
+**D01D: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Mechanical Methods Or Apparatus In The Manufacture Of Man-Made Filaments, Threads, Fibres, Bristles Or Ribbons
+100 1 ^D01D
+**D01F: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Chemical Features In The Manufacture Of Man-Made Filaments, Threads, Fibres, Bristles Or Ribbons; Apparatus Specially Adapted For The Manufacture Of Carbon Filaments
+100 1 ^D01F
+**D01G: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Preliminary Treatment Of Fibres, E.G. For Spinning
+100 1 ^D01G
+**D01H: Textiles; Paper -> Natural Or Man-Made Threads Or Fibres; Spinning -> Spinning Or Twisting
+100 1 ^D01H
+**D02: Textiles; Paper -> Yarns; Mechanical Finishing Of Yarns Or Ropes; Warping Or Beaming
+100 1 ^D02$
+**D02G: Textiles; Paper -> Yarns; Mechanical Finishing Of Yarns Or Ropes; Warping Or Beaming -> Crimping Or Curling Fibres, Filaments, Yarns, Or Threads; Yarns Or Threads
+100 1 ^D02G
+**D02H: Textiles; Paper -> Yarns; Mechanical Finishing Of Yarns Or Ropes; Warping Or Beaming -> Warping, Beaming, Or Leasing
+100 1 ^D02H
+**D02J: Textiles; Paper -> Yarns; Mechanical Finishing Of Yarns Or Ropes; Warping Or Beaming -> Finishing Or Dressing Of Filaments, Yarns, Threads, Cords, Ropes, Or The Like
+100 1 ^D02J
+**D03: Textiles; Paper -> Weaving
+100 1 ^D03$
+**D03C: Textiles; Paper -> Weaving -> Shedding Mechanisms; Pattern Cards Or Chains; Punching Of Cards; Designing Patterns
+100 1 ^D03C
+**D03D: Textiles; Paper -> Weaving -> Woven Fabrics; Methods Of Weaving; Looms
+100 1 ^D03D
+**D03J: Textiles; Paper -> Weaving -> Auxiliary Weaving Apparatus; Weavers' Tools; Shuttles
+100 1 ^D03J
+**D04: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics
+100 1 ^D04$
+**D04B: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics -> Knitting
+100 1 ^D04B
+**D04C: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics -> Braiding Or Manufacture Of Lace, Including Bobbin-Net Or Carbonised Lace; Braiding Machines; Braid; Lace
+100 1 ^D04C
+**D04D: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics -> Trimmings; Ribbons, Tapes, Or Bands, Not Otherwise Provided For
+100 1 ^D04D
+**D04G: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics -> Making Nets By Knotting Of Filamentary Material; Making Knotted Carpets Or Tapestries; Knotting Not Otherwise Provided For
+100 1 ^D04G
+**D04H: Textiles; Paper -> Braiding; Lace-Making; Knitting; Trimmings; Non-Woven Fabrics -> Making Textile Fabrics, E.G. From Fibres Or Filamentary Material; Fabrics Made By Such Processes Or Apparatus, E.G. Felts, Non-Woven Fabrics; Cotton-Wool; Wadding
+100 1 ^D04H
+**D05: Textiles; Paper -> Sewing; Embroidering; Tufting
+100 1 ^D05$
+**D05B: Textiles; Paper -> Sewing; Embroidering; Tufting -> Sewing
+100 1 ^D05B
+**D05C: Textiles; Paper -> Sewing; Embroidering; Tufting -> Embroidering; Tufting
+100 1 ^D05C
+**D06: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For
+100 1 ^D06$
+**D06B: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Treating Textile Materials By Liquids, Gases, Or Vapours
+100 1 ^D06B
+**D06C: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Finishing, Dressing, Tentering, Or Stretching Textile Fabrics
+100 1 ^D06C
+**D06F: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Laundering, Drying, Ironing, Pressing Or Folding Textile Articles
+100 1 ^D06F
+**D06G: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Mechanical Or Pressure Cleaning Of Carpets, Rugs, Sacks, Hides, Or Other Skin Or Textile Articles Or Fabrics; Turning Inside-Out Flexible Tubular Or Other Hollow Articles
+100 1 ^D06G
+**D06H: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Marking, Inspecting, Seaming, Or Severing Textile Materials
+100 1 ^D06H
+**D06J: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Pleating, Kilting, Or Goffering Textile Fabrics Or Wearing Apparel
+100 1 ^D06J
+**D06L: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Bleaching, E.G. Optical Bleaching, Dry-Cleaning Or Washing Fibres, Threads, Yarns, Fabrics, Feathers Or Made-Up Fibrous Goods; Bleaching Leather Or Furs
+100 1 ^D06L
+**D06M: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Treatment, Not Provided For Elsewhere In Class D06, Of Fibres, Threads, Yarns, Fabrics, Feathers Or Fibrous Goods Made From Such Materials
+100 1 ^D06M
+**D06N: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Wall, Floor, Or Like Covering Materials, E.G. Linoleum, Oilcloth, Artificial Leather, Roofing Felt, Consisting Of A Fibrous Web Coated With A Layer Of Macromolecular Material; Flexible Sheet Material Not Otherwise Provided For
+100 1 ^D06N
+**D06P: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Dyeing Or Printing Textiles; Dyeing Leather, Furs Or Solid Macromolecular Substances In Any Form
+100 1 ^D06P
+**D06Q: Textiles; Paper -> Treatment Of Textiles Or The Like; Laundering; Flexible Materials Not Otherwise Provided For -> Decorating Textiles
+100 1 ^D06Q
+**D07: Textiles; Paper -> Ropes; Cables Other Than Electric
+100 1 ^D07$
+**D07B: Textiles; Paper -> Ropes; Cables Other Than Electric -> Ropes Or Cables In General
+100 1 ^D07B
+**D21: Textiles; Paper -> Paper-Making; Production Of Cellulose
+100 1 ^D21$
+**D21B: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Fibrous Raw Materials Or Their Mechanical Treatment
+100 1 ^D21B
+**D21C: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Production Of Cellulose By Removing Non-Cellulose Substances From Cellulose- Containing Materials; Regeneration Of Pulping Liquors; Apparatus Therefor
+100 1 ^D21C
+**D21D: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Treatment Of The Materials Before Passing To The Paper-Making Machine
+100 1 ^D21D
+**D21F: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Paper-Making Machines; Methods Of Producing Paper Thereon
+100 1 ^D21F
+**D21G: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Calenders; Accessories For Paper-Making Machines
+100 1 ^D21G
+**D21H: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Pulp Compositions; Preparation Thereof Not Covered By Subclasses D21c, D21d; Impregnating Or Coating Of Paper; Treatment Of Finished Paper Not Covered By Class B31 Or Subclass D21g; Paper Not Otherwise Provided For
+100 1 ^D21H
+**D21J: Textiles; Paper -> Paper-Making; Production Of Cellulose -> Fibreboard; Manufacture Of Articles From Cellulosic Fibrous Suspensions Or From Papier-MÂchÉ
+100 1 ^D21J
+**D99: Textiles; Paper -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^D99$
+**D99Z: Textiles; Paper -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^D99Z
+**E01: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges
+100 1 ^E01$
+**E01B: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges -> Permanent Way; Permanent-Way Tools; Machines For Making Railways Of All Kinds
+100 1 ^E01B
+**E01C: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges -> Construction Of, Or Surfaces For, Roads, Sports Grounds, Or The Like; Machines Or Auxiliary Tools For Construction Or Repair
+100 1 ^E01C
+**E01D: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges -> Bridges
+100 1 ^E01D
+**E01F: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges -> Additional Work, Such As Equipping Roads Or The Construction Of Platforms, Helicopter Landing Stages, Signs, Snow Fences, Or The Like
+100 1 ^E01F
+**E01H: Fixed Constructions -> Construction Of Roads, Railways, Or Bridges -> Street Cleaning; Cleaning Of Permanent Ways; Cleaning Beaches; Cleaning Land; Dispersing Fog In General
+100 1 ^E01H
+**E02: Fixed Constructions -> Hydraulic Engineering; Foundations; Soil-Shifting
+100 1 ^E02$
+**E02B: Fixed Constructions -> Hydraulic Engineering; Foundations; Soil-Shifting -> Hydraulic Engineering
+100 1 ^E02B
+**E02C: Fixed Constructions -> Hydraulic Engineering; Foundations; Soil-Shifting -> Ship-Lifting Devices Or Mechanisms
+100 1 ^E02C
+**E02D: Fixed Constructions -> Hydraulic Engineering; Foundations; Soil-Shifting -> Foundations; Excavations; Embankments; Underground Or Underwater Structures
+100 1 ^E02D
+**E02F: Fixed Constructions -> Hydraulic Engineering; Foundations; Soil-Shifting -> Dredging; Soil-Shifting
+100 1 ^E02F
+**E03: Fixed Constructions -> Water Supply; Sewerage
+100 1 ^E03$
+**E03B: Fixed Constructions -> Water Supply; Sewerage -> Installations Or Methods For Obtaining, Collecting, Or Distributing Water
+100 1 ^E03B
+**E03C: Fixed Constructions -> Water Supply; Sewerage -> Domestic Plumbing Installations For Fresh Water Or Waste Water; Sinks
+100 1 ^E03C
+**E03D: Fixed Constructions -> Water Supply; Sewerage -> Water-Closets Or Urinals With Flushing Devices; Flushing Valves Therefor
+100 1 ^E03D
+**E03F: Fixed Constructions -> Water Supply; Sewerage -> Sewers; Cesspools
+100 1 ^E03F
+**E04: Fixed Constructions -> Building
+100 1 ^E04$
+**E04B: Fixed Constructions -> Building -> General Building Constructions; Walls, E.G. Partitions; Roofs; Floors; Ceilings; Insulation Or Other Protection Of Buildings
+100 1 ^E04B
+**E04C: Fixed Constructions -> Building -> Structural Elements; Building Materials
+100 1 ^E04C
+**E04D: Fixed Constructions -> Building -> Roof Coverings; Sky-Lights; Gutters; Roof-Working Tools
+100 1 ^E04D
+**E04F: Fixed Constructions -> Building -> Finishing Work On Buildings, E.G. Stairs, Floors
+100 1 ^E04F
+**E04G: Fixed Constructions -> Building -> Scaffolding; Forms; Shuttering; Building Implements Or Other Building Aids, Or Their Use; Handling Building Materials On The Site; Repairing, Breaking-Up Or Other Work On Existing Buildings
+100 1 ^E04G
+**E04H: Fixed Constructions -> Building -> Buildings Or Like Structures For Particular Purposes; Swimming Or Splash Baths Or Pools; Masts; Fencing; Tents Or Canopies, In General
+100 1 ^E04H
+**E05: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes
+100 1 ^E05$
+**E05B: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes -> Locks; Accessories Therefor; Handcuffs
+100 1 ^E05B
+**E05C: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes -> Bolts Or Fastening Devices For Wings, Specially For Doors Or Windows
+100 1 ^E05C
+**E05D: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes -> Hinges Or Other Suspension Devices For Doors, Windows, Or Wings
+100 1 ^E05D
+**E05F: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes -> Devices For Moving Wings Into Open Or Closed Position; Checks For Wings; Wing Fittings Not Otherwise Provided For, Concerned With The Functioning Of The Wing
+100 1 ^E05F
+**E05G: Fixed Constructions -> Locks; Keys; Window Or Door Fittings; Safes -> Safes Or Strong-Rooms For Valuables; Bank Protection Devices; Safety Transaction Partitions
+100 1 ^E05G
+**E06: Fixed Constructions -> Doors, Windows, Shutters, Or Roller Blinds, In General; Ladders
+100 1 ^E06$
+**E06B: Fixed Constructions -> Doors, Windows, Shutters, Or Roller Blinds, In General; Ladders -> Fixed Or Movable Closures For Openings In Buildings, Vehicles, Fences, Or Like Enclosures, In General, E.G. Doors, Windows, Blinds, Gates
+100 1 ^E06B
+**E06C: Fixed Constructions -> Doors, Windows, Shutters, Or Roller Blinds, In General; Ladders -> Ladders
+100 1 ^E06C
+**E21: Fixed Constructions -> Earth Or Rock Drilling; Mining
+100 1 ^E21$
+**E21B: Fixed Constructions -> Earth Or Rock Drilling; Mining -> Earth Or Rock Drilling; Obtaining Oil, Gas, Water, Soluble Or Meltable Materials Or A Slurry Of Minerals From Wells
+100 1 ^E21B
+**E21C: Fixed Constructions -> Earth Or Rock Drilling; Mining -> Mining Or Quarrying
+100 1 ^E21C
+**E21D: Fixed Constructions -> Earth Or Rock Drilling; Mining -> Shafts; Tunnels; Galleries; Large Underground Chambers
+100 1 ^E21D
+**E21F: Fixed Constructions -> Earth Or Rock Drilling; Mining -> Safety Devices, Transport, Filling-Up, Rescue, Ventilation, Or Drainage In Or Of Mines Or Tunnels
+100 1 ^E21F
+**E99: Fixed Constructions -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^E99$
+**E99Z: Fixed Constructions -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^E99Z
+**F01: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines
+100 1 ^F01$
+**F01B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Machines Or Engines, In General Or Of Positive-Displacement Type, E.G. Steam Engines
+100 1 ^F01B
+**F01C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Rotary-Piston Or Oscillating-Piston Machines Or Engines
+100 1 ^F01C
+**F01D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Non-Positive-Displacement Machines Or Engines, E.G. Steam Turbines
+100 1 ^F01D
+**F01K: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Steam Engine Plants; Steam Accumulators; Engine Plants Not Otherwise Provided For; Engines Using Special Working Fluids Or Cycles
+100 1 ^F01K
+**F01L: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Cyclically Operating Valves For Machines Or Engines
+100 1 ^F01L
+**F01M: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Lubricating Of Machines Or Engines In General; Lubricating Internal-Combustion Engines; Crankcase Ventilating
+100 1 ^F01M
+**F01N: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Gas-Flow Silencers Or Exhaust Apparatus For Machines Or Engines In General; Gas-Flow Silencers Or Exhaust Apparatus For Internal-Combustion Engines
+100 1 ^F01N
+**F01P: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines In General; Engine Plants In General; Steam Engines -> Cooling Of Machines Or Engines In General; Cooling Of Internal-Combustion Engines
+100 1 ^F01P
+**F02: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants
+100 1 ^F02$
+**F02B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Internal-Combustion Piston Engines; Combustion Engines In General
+100 1 ^F02B
+**F02C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Gas-Turbine Plants; Air Intakes For Jet-Propulsion Plants; Controlling Fuel Supply In Air-Breathing Jet-Propulsion Plants
+100 1 ^F02C
+**F02D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Controlling Combustion Engines
+100 1 ^F02D
+**F02F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Cylinders, Pistons, Or Casings For Combustion Engines; Arrangements Of Sealings In Combustion Engines
+100 1 ^F02F
+**F02G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Hot-Gas Or Combustion-Product Positive-Displacement Engine Plants; Use Of Waste Heat Of Combustion Engines, Not Otherwise Provided For
+100 1 ^F02G
+**F02K: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Jet-Propulsion Plants
+100 1 ^F02K
+**F02M: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Supplying Combustion Engines In General With Combustible Mixtures Or Constituents Thereof
+100 1 ^F02M
+**F02N: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Starting Of Combustion Engines; Starting Aids For Such Engines, Not Otherwise Provided For
+100 1 ^F02N
+**F02P: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Engines; Hot-Gas Or Combustion-Product Engine Plants -> Ignition, Other Than Compression Ignition, For Internal-Combustion Engines; Testing Of Ignition Timing In Compression-Ignition Engines
+100 1 ^F02P
+**F03: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For
+100 1 ^F03$
+**F03B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For -> Machines Or Engines For Liquids
+100 1 ^F03B
+**F03C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For -> Positive-Displacement Engines Driven By Liquids
+100 1 ^F03C
+**F03D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For -> Wind Motors
+100 1 ^F03D
+**F03G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For -> Spring, Weight, Inertia, Or Like Motors; Mechanical-Power-Producing Devices Or Mechanisms, Not Otherwise Provided For Or Using Energy Sources Not Otherwise Provided For
+100 1 ^F03G
+**F03H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Machines Or Engines For Liquids; Wind, Spring, Or Weight Motors; Producing Mechanical Power Or A Reactive Propulsive Thrust, Not Otherwise Provided For -> Producing A Reactive Propulsive Thrust, Not Otherwise Provided For
+100 1 ^F03H
+**F04: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Positive-Displacement Machines For Liquids; Pumps For Liquids Or Elastic Fluids
+100 1 ^F04$
+**F04B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Positive-Displacement Machines For Liquids; Pumps For Liquids Or Elastic Fluids -> Positive-Displacement Machines For Liquids; Pumps
+100 1 ^F04B
+**F04C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Positive-Displacement Machines For Liquids; Pumps For Liquids Or Elastic Fluids -> Rotary-Piston, Or Oscillating-Piston, Positive-Displacement Machines For Liquids; Rotary-Piston, Or Oscillating-Piston, Positive-Displacement Pumps
+100 1 ^F04C
+**F04D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Positive-Displacement Machines For Liquids; Pumps For Liquids Or Elastic Fluids -> Non-Positive-Displacement Pumps
+100 1 ^F04D
+**F04F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Positive-Displacement Machines For Liquids; Pumps For Liquids Or Elastic Fluids -> Pumping Of Fluid By Direct Contact Of Another Fluid Or By Using Inertia Of Fluid To Be Pumped; Siphons
+100 1 ^F04F
+**F15: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Fluid-Pressure Actuators; Hydraulics Or Pneumatics In General
+100 1 ^F15$
+**F15B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Fluid-Pressure Actuators; Hydraulics Or Pneumatics In General -> Systems Acting By Means Of Fluids In General; Fluid-Pressure Actuators, E.G. Servomotors; Details Of Fluid-Pressure Systems, Not Otherwise Provided For
+100 1 ^F15B
+**F15C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Fluid-Pressure Actuators; Hydraulics Or Pneumatics In General -> Fluid-Circuit Elements Predominantly Used For Computing Or Control Purposes
+100 1 ^F15C
+**F15D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Fluid-Pressure Actuators; Hydraulics Or Pneumatics In General -> Fluid Dynamics, I.E. Methods Or Means For Influencing The Flow Of Gases Or Liquids
+100 1 ^F15D
+**F16: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General
+100 1 ^F16$
+**F16B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Devices For Fastening Or Securing Constructional Elements Or Machine Parts Together, E.G. Nails, Bolts, Circlips, Clamps, Clips Or Wedges; Joints Or Jointing
+100 1 ^F16B
+**F16C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Shafts; Flexible Shafts; Mechanical Means For Transmitting Movement In A Flexible Sheathing; Elements Of Crankshaft Mechanisms; Pivots; Pivotal Connections; Rotary Engineering Elements Other Than Gearing, Coupling, Clutch Or Brake Elements; Bearings
+100 1 ^F16C
+**F16D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Couplings For Transmitting Rotation; Clutches; Brakes
+100 1 ^F16D
+**F16F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Springs; Shock-Absorbers; Means For Damping Vibration
+100 1 ^F16F
+**F16G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Belts, Cables, Or Ropes, Predominantly Used For Driving Purposes; Chains; Fittings Predominantly Used Therefor
+100 1 ^F16G
+**F16H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Gearing
+100 1 ^F16H
+**F16J: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Pistons; Cylinders; Pressure Vessels In General; Sealings
+100 1 ^F16J
+**F16K: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Valves; Taps; Cocks; Actuating-Floats; Devices For Venting Or Aerating
+100 1 ^F16K
+**F16L: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Pipes; Joints Or Fittings For Pipes; Supports For Pipes, Cables Or Protective Tubing; Means For Thermal Insulation In General
+100 1 ^F16L
+**F16M: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Frames, Casings, Or Beds, Of Engines Or Other Machines Or Apparatus, Not Specific To An Engine, Machine, Or Apparatus Provided For Elsewhere; Stands Or Supports
+100 1 ^F16M
+**F16N: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Lubricating
+100 1 ^F16N
+**F16P: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Safety Devices In General
+100 1 ^F16P
+**F16S: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Constructional Elements In General; Structures Built-Up From Such Elements, In General
+100 1 ^F16S
+**F16T: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Engineering Elements Or Units; General Measures For Producing And Maintaining Effective Functioning Of Machines Or Installations; Thermal Insulation In General -> Steam Traps Or Like Apparatus For Draining-Off Liquids From Enclosures Predominantly Containing Gases Or Vapours
+100 1 ^F16T
+**F17: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Storing Or Distributing Gases Or Liquids
+100 1 ^F17$
+**F17B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Storing Or Distributing Gases Or Liquids -> Gas-Holders Of Variable Capacity
+100 1 ^F17B
+**F17C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Storing Or Distributing Gases Or Liquids -> Vessels For Containing Or Storing Compressed, Liquefied, Or Solidified Gases; Fixed-Capacity Gas-Holders; Filling Vessels With, Or Discharging From Vessels, Compressed, Liquefied, Or Solidified Gases
+100 1 ^F17C
+**F17D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Storing Or Distributing Gases Or Liquids -> Pipe-Line Systems; Pipe-Lines
+100 1 ^F17D
+**F21: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting
+100 1 ^F21$
+**F21H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Incandescent Mantles; Other Incandescent Bodies Heated By Combustion
+100 1 ^F21H
+**F21K: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Light Sources Not Otherwise Provided For
+100 1 ^F21K
+**F21L: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Lighting Devices Or Systems Thereof, Being Portable Or Specially Adapted For Transportation
+100 1 ^F21L
+**F21S: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Non-Portable Lighting Devices Or Systems Thereof
+100 1 ^F21S
+**F21V: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Functional Features Or Details Of Lighting Devices Or Systems Thereof; Structural Combinations Of Lighting Devices With Other Articles, Not Otherwise Provided For
+100 1 ^F21V
+**F21W: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Indexing Scheme Associated With Subclasses F21k, F21l, F21s And F21v, Relating To Uses Or Applications Of Lighting Devices Or Systems
+100 1 ^F21W
+**F21Y: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Lighting -> Indexing Scheme Associated With Subclasses F21k, F21l, F21s And F21v, Relating To The Form Or The Kind Of The Light Sources Or Of The Colour Of The Light Emitted
+100 1 ^F21Y
+**F22: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Steam Generation
+100 1 ^F22$
+**F22B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Steam Generation -> Methods Of Steam Generation; Steam Boilers
+100 1 ^F22B
+**F22D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Steam Generation -> Preheating, Or Accumulating Preheated, Feed-Water; Feed-Water Supply; Controlling Water Level;  Auxiliary Devices For Promoting Water Circulation Within Boilers
+100 1 ^F22D
+**F22G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Steam Generation -> Superheating Of Steam
+100 1 ^F22G
+**F23: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes
+100 1 ^F23$
+**F23B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Methods Or Apparatus For Combustion Using Only Solid Fuel
+100 1 ^F23B
+**F23C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Methods Or Apparatus For Combustion Using Fluid Fuel Or Solid Fuel Suspended In Air
+100 1 ^F23C
+**F23D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Burners
+100 1 ^F23D
+**F23G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Cremation Furnaces; Consuming Waste Or Low Grade Fuels By Combustion
+100 1 ^F23G
+**F23H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Grates; Cleaning Or Raking Grates
+100 1 ^F23H
+**F23J: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Removal Or Treatment Of Combustion Products Or Combustion Residues; Flues
+100 1 ^F23J
+**F23K: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Feeding Fuel To Combustion Apparatus
+100 1 ^F23K
+**F23L: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Supplying Air Or Non-Combustible Liquids Or Gases To Combustion Apparatus In General; Valves Or Dampers Specially Adapted For Controlling Air Supply Or Draught In Combustion Apparatus; Inducing Draught In Combustion Apparatus; Tops For Chimneys Or Ventilating Shafts; Terminals For Flues
+100 1 ^F23L
+**F23M: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Casings, Linings, Walls Or Doors Specially Adapted For Combustion Chambers, E.G. Firebridges; Devices For Deflecting Air, Flames Or Combustion Products In Combustion Chambers; Safety Arrangements Specially Adapted For Combustion Apparatus; Details Of Combustion Chambers, Not Otherwise Provided For
+100 1 ^F23M
+**F23N: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Regulating Or Controlling Combustion
+100 1 ^F23N
+**F23Q: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Ignition; Extinguishing Devices
+100 1 ^F23Q
+**F23R: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Combustion Apparatus; Combustion Processes -> Generating Combustion Products Of High Pressure Or High Velocity, E.G. Gas-Turbine Combustion Chambers
+100 1 ^F23R
+**F24: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating
+100 1 ^F24$
+**F24B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Domestic Stoves Or Ranges For Solid Fuels; Implements For Use In Connection With Stoves Or Ranges
+100 1 ^F24B
+**F24C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Other Domestic Stoves Or Ranges; Details Of Domestic Stoves Or Ranges, Of General Application
+100 1 ^F24C
+**F24D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Domestic- Or Space-Heating Systems, E.G. Central Heating Systems; Domestic Hot-Water Supply Systems; Elements Or Components Therefor
+100 1 ^F24D
+**F24F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Air-Conditioning; Air-Humidification; Ventilation; Use Of Air Currents For Screening
+100 1 ^F24F
+**F24H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Fluid Heaters, E.G. Water Or Air Heaters, Having Heat-Generating Means, In General
+100 1 ^F24H
+**F24J: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heating; Ranges; Ventilating -> Production Or Use Of Heat Not Otherwise Provided For
+100 1 ^F24J
+**F25: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Refrigeration Or Cooling; Combined Heating And Refrigeration Systems; Heat Pump Systems; Manufacture Or Storage Of Ice; Liquefaction Or Solidification Of Gases
+100 1 ^F25$
+**F25B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Refrigeration Or Cooling; Combined Heating And Refrigeration Systems; Heat Pump Systems; Manufacture Or Storage Of Ice; Liquefaction Or Solidification Of Gases -> Refrigeration Machines, Plants, Or Systems; Combined Heating And Refrigeration Systems; Heat Pump Systems
+100 1 ^F25B
+**F25C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Refrigeration Or Cooling; Combined Heating And Refrigeration Systems; Heat Pump Systems; Manufacture Or Storage Of Ice; Liquefaction Or Solidification Of Gases -> Production, Working, Storing Or Distribution Of Ice
+100 1 ^F25C
+**F25D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Refrigeration Or Cooling; Combined Heating And Refrigeration Systems; Heat Pump Systems; Manufacture Or Storage Of Ice; Liquefaction Or Solidification Of Gases -> Refrigerators; Cold Rooms; Ice-Boxes; Cooling Or Freezing Apparatus Not Covered By Any Other Subclass
+100 1 ^F25D
+**F25J: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Refrigeration Or Cooling; Combined Heating And Refrigeration Systems; Heat Pump Systems; Manufacture Or Storage Of Ice; Liquefaction Or Solidification Of Gases -> Liquefaction, Solidification, Or Separation Of Gases Or Gaseous Mixtures By Pressure And Cold Treatment
+100 1 ^F25J
+**F26: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Drying
+100 1 ^F26$
+**F26B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Drying -> Drying Solid Materials Or Objects By Removing Liquid Therefrom
+100 1 ^F26B
+**F27: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Furnaces; Kilns; Ovens; Retorts
+100 1 ^F27$
+**F27B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Furnaces; Kilns; Ovens; Retorts -> Furnaces, Kilns, Ovens, Or Retorts In General; Open Sintering Or Like Apparatus
+100 1 ^F27B
+**F27D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Furnaces; Kilns; Ovens; Retorts -> Details Or Accessories Of Furnaces, Kilns, Ovens, Or Retorts, In So Far As They Are Of Kinds Occurring In More Than One Kind Of Furnace
+100 1 ^F27D
+**F28: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General
+100 1 ^F28$
+**F28B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General -> Steam Or Vapour Condensers
+100 1 ^F28B
+**F28C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General -> Heat-Exchange Apparatus, Not Provided For In Another Subclass, In Which The Heat-Exchange Media Come Into Direct Contact Without Chemical Interaction
+100 1 ^F28C
+**F28D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General -> Heat-Exchange Apparatus, Not Provided For In Another Subclass, In Which The Heat-Exchange Media Do Not Come Into Direct Contact; Heat Storage Plants Or Apparatus In General
+100 1 ^F28D
+**F28F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General -> Details Of Heat-Exchange Or Heat-Transfer Apparatus, Of General Application
+100 1 ^F28F
+**F28G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Heat Exchange In General -> Cleaning Of Internal Or External Surfaces Of Heat-Exchange Or Heat-Transfer Conduits, E.G. Water Tubes Of Boilers
+100 1 ^F28G
+**F41: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons
+100 1 ^F41$
+**F41A: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Functional Features Or Details Common To Both Smallarms And Ordnance, E.G. Cannons; Mountings For Smallarms Or Ordnance
+100 1 ^F41A
+**F41B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Weapons For Projecting Missiles Without Use Of Explosive Or Combustible Propellant Charge; Weapons Not Otherwise Provided For
+100 1 ^F41B
+**F41C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Smallarms, E.G. Pistols Or Rifles; Accessories Therefor
+100 1 ^F41C
+**F41F: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Apparatus For Launching Projectiles Or Missiles From Barrels, E.G. Cannons; Launchers For Rockets Or Torpedoes; Harpoon Guns
+100 1 ^F41F
+**F41G: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Weapon Sights; Aiming
+100 1 ^F41G
+**F41H: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Armour; Armoured Turrets; Armoured Or Armed Vehicles; Means Of Attack Or Defence, E.G. Camouflage, In General
+100 1 ^F41H
+**F41J: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Weapons -> Targets; Target Ranges; Bullet Catchers
+100 1 ^F41J
+**F42: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Ammunition; Blasting
+100 1 ^F42$
+**F42B: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Ammunition; Blasting -> Explosive Charges, E.G. For Blasting; Fireworks; Ammunition
+100 1 ^F42B
+**F42C: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Ammunition; Blasting -> Ammunition Fuzes; Arming Or Safety Means Therefor
+100 1 ^F42C
+**F42D: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Ammunition; Blasting -> Blasting
+100 1 ^F42D
+**F99: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^F99$
+**F99Z: Mechanical Engineering; Lighting; Heating; Weapons; Blasting -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^F99Z
+**G01: Physics -> Measuring; Testing
+100 1 ^G01$
+**G01B: Physics -> Measuring; Testing -> Measuring Length, Thickness Or Similar Linear Dimensions; Measuring Angles; Measuring Areas; Measuring Irregularities Of Surfaces Or Contours
+100 1 ^G01B
+**G01C: Physics -> Measuring; Testing -> Measuring Distances, Levels Or Bearings; Surveying; Navigation; Gyroscopic Instruments; Photogrammetry Or Videogrammetry
+100 1 ^G01C
+**G01D: Physics -> Measuring; Testing -> Measuring Not Specially Adapted For A Specific Variable; Arrangements For Measuring Two Or More Variables Not Covered By A Single Other Subclass; Tariff Metering Apparatus; Transferring Or Transducing Arrangements Not Specially Adapted For A Specific Variable; Measuring Or Testing Not Otherwise Provided For
+100 1 ^G01D
+**G01F: Physics -> Measuring; Testing -> Measuring Volume, Volume Flow, Mass Flow, Or Liquid Level; Metering By Volume
+100 1 ^G01F
+**G01G: Physics -> Measuring; Testing -> Weighing
+100 1 ^G01G
+**G01H: Physics -> Measuring; Testing -> Measurement Of Mechanical Vibrations Or Ultrasonic, Sonic Or Infrasonic Waves
+100 1 ^G01H
+**G01J: Physics -> Measuring; Testing -> Measurement Of Intensity, Velocity, Spectral Content, Polarisation, Phase Or Pulse Characteristics Of Infra-Red, Visible Or Ultra-Violet Light; Colorimetry; Radiation Pyrometry
+100 1 ^G01J
+**G01K: Physics -> Measuring; Testing -> Measuring Temperature; Measuring Quantity Of Heat; Thermally-Sensitive Elements Not Otherwise Provided For
+100 1 ^G01K
+**G01L: Physics -> Measuring; Testing -> Measuring Force, Stress, Torque, Work, Mechanical Power, Mechanical Efficiency, Or Fluid Pressure
+100 1 ^G01L
+**G01M: Physics -> Measuring; Testing -> Testing Static Or Dynamic Balance Of Machines Or Structures; Testing Of Structures Or Apparatus, Not Otherwise Provided For
+100 1 ^G01M
+**G01N: Physics -> Measuring; Testing -> Investigating Or Analysing Materials By Determining Their Chemical Or Physical Properties
+100 1 ^G01N
+**G01P: Physics -> Measuring; Testing -> Measuring Linear Or Angular Speed, Acceleration, Deceleration Or Shock; Indicating Presence Or Absence Of Movement;  Indicating Direction Of Movement
+100 1 ^G01P
+**G01Q: Physics -> Measuring; Testing -> Scanning-Probe Techniques Or Apparatus; Applications Of Scanning-Probe Techniques, E.G. Scanning-Probe Microscopy [Spm]
+100 1 ^G01Q
+**G01R: Physics -> Measuring; Testing -> Measuring Electric Variables; Measuring Magnetic Variables
+100 1 ^G01R
+**G01S: Physics -> Measuring; Testing -> Radio Direction-Finding; Radio Navigation; Determining Distance Or Velocity By Use Of Radio Waves; Locating Or Presence-Detecting By Use Of The Reflection Or Reradiation Of Radio Waves; Analogous Arrangements Using Other Waves
+100 1 ^G01S
+**G01T: Physics -> Measuring; Testing -> Measurement Of Nuclear Or X-Radiation
+100 1 ^G01T
+**G01V: Physics -> Measuring; Testing -> Geophysics; Gravitational Measurements; Detecting Masses Or Objects; Tags
+100 1 ^G01V
+**G01W: Physics -> Measuring; Testing -> Meteorology
+100 1 ^G01W
+**G02: Physics -> Optics
+100 1 ^G02$
+**G02B: Physics -> Optics -> Optical Elements, Systems, Or Apparatus
+100 1 ^G02B
+**G02C: Physics -> Optics -> Spectacles; Sunglasses Or Goggles Insofar As They Have The Same Features As Spectacles; Contact Lenses
+100 1 ^G02C
+**G02F: Physics -> Optics -> Devices Or Arrangements, The Optical Operation Of Which Is Modified By Changing The Optical Properties Of The Medium Of The Devices Or Arrangements For The Control Of The Intensity, Colour, Phase, Polarisation Or Direction Of Light, E.G. Switching, Gating, Modulating Or Demodulating; Techniques Or Procedures For The Operation Thereof; Frequency-Changing; Non-Linear Optics; Optical Logic Elements; Optical Analogue/Digital Converters
+100 1 ^G02F
+**G03: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography
+100 1 ^G03$
+**G03B: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Apparatus Or Arrangements For Taking Photographs Or For Projecting Or Viewing Them; Apparatus Or Arrangements Employing Analogous Techniques Using Waves Other Than Optical Waves; Accessories Therefor
+100 1 ^G03B
+**G03C: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Photosensitive Materials For Photographic Purposes; Photographic Processes, E.G. Cine, X-Ray, Colour Or Stereo-Photographic Processes; Auxiliary Processes In Photography
+100 1 ^G03C
+**G03D: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Apparatus For Processing Exposed Photographic Materials; Accessories Therefor
+100 1 ^G03D
+**G03F: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Photomechanical Production Of Textured Or Patterned Surfaces, E.G. For Printing, For Processing Of Semiconductor Devices; Materials Therefor; Originals Therefor; Apparatus Specially Adapted Therefor
+100 1 ^G03F
+**G03G: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Electrography; Electrophotography; Magnetography
+100 1 ^G03G
+**G03H: Physics -> Photography; Cinematography; Analogous Techniques Using Waves Other Than Optical Waves; Electrography; Holography -> Holographic Processes Or Apparatus
+100 1 ^G03H
+**G04: Physics -> Horology
+100 1 ^G04$
+**G04B: Physics -> Horology -> Mechanically-Driven Clocks Or Watches; Mechanical Parts Of Clocks Or Watches In General; Time-Pieces Using The Position Of The Sun, Moon, Or Stars
+100 1 ^G04B
+**G04C: Physics -> Horology -> Electromechanical Clocks Or Watches
+100 1 ^G04C
+**G04D: Physics -> Horology -> Apparatus Or Tools Specially Designed For Making Or Maintaining Clocks Or Watches
+100 1 ^G04D
+**G04F: Physics -> Horology -> Time-Interval Measuring
+100 1 ^G04F
+**G04G: Physics -> Horology -> Electronic Time-Pieces
+100 1 ^G04G
+**G04R: Physics -> Horology -> Radio-Controlled Time-Pieces
+100 1 ^G04R
+**G05: Physics -> Controlling; Regulating
+100 1 ^G05$
+**G05B: Physics -> Controlling; Regulating -> Control Or Regulating Systems In General; Functional Elements Of Such Systems; Monitoring Or Testing Arrangements For Such Systems Or Elements
+100 1 ^G05B
+**G05D: Physics -> Controlling; Regulating -> Systems For Controlling Or Regulating Non-Electric Variables
+100 1 ^G05D
+**G05F: Physics -> Controlling; Regulating -> Systems For Regulating Electric Or Magnetic Variables
+100 1 ^G05F
+**G05G: Physics -> Controlling; Regulating -> Control Devices Or Systems Insofar As Characterised By Mechanical Features Only
+100 1 ^G05G
+**G06: Physics -> Computing; Calculating; Counting
+100 1 ^G06$
+**G06C: Physics -> Computing; Calculating; Counting -> Digital Computers In Which All The Computation Is Effected Mechanically
+100 1 ^G06C
+**G06D: Physics -> Computing; Calculating; Counting -> Digital Fluid-Pressure Computing Devices
+100 1 ^G06D
+**G06E: Physics -> Computing; Calculating; Counting -> Optical Computing Devices
+100 1 ^G06E
+**G06F: Physics -> Computing; Calculating; Counting -> Electric Digital Data Processing
+100 1 ^G06F
+**G06G: Physics -> Computing; Calculating; Counting -> Analogue Computers
+100 1 ^G06G
+**G06J: Physics -> Computing; Calculating; Counting -> Hybrid Computing Arrangements
+100 1 ^G06J
+**G06K: Physics -> Computing; Calculating; Counting -> Recognition Of Data; Presentation Of Data; Record Carriers; Handling Record Carriers
+100 1 ^G06K
+**G06M: Physics -> Computing; Calculating; Counting -> Counting Mechanisms; Counting Of Objects Not Otherwise Provided For
+100 1 ^G06M
+**G06N: Physics -> Computing; Calculating; Counting -> Computer Systems Based On Specific Computational Models
+100 1 ^G06N
+**G06Q: Physics -> Computing; Calculating; Counting -> Data Processing Systems Or Methods, Specially Adapted For Administrative, Commercial, Financial, Managerial, Supervisory Or Forecasting Purposes; Systems Or Methods Specially Adapted For Administrative, Commercial, Financial, Managerial, Supervisory Or Forecasting Purposes, Not Otherwise Provided For
+100 1 ^G06Q
+**G06T: Physics -> Computing; Calculating; Counting -> Image Data Processing Or Generation, In General
+100 1 ^G06T
+**G07: Physics -> Checking-Devices
+100 1 ^G07$
+**G07B: Physics -> Checking-Devices -> Ticket-Issuing Apparatus; Taximeters; Arrangements Or Apparatus For Collecting Fares, Tolls Or Entrance Fees At One Or More Control Points;  Franking Apparatus
+100 1 ^G07B
+**G07C: Physics -> Checking-Devices -> Time Or Attendance Registers; Registering Or Indicating The Working Of Machines; Generating Random Numbers; Voting Or Lottery Apparatus; Arrangements, Systems Or Apparatus For Checking Not Provided For Elsewhere
+100 1 ^G07C
+**G07D: Physics -> Checking-Devices -> Handling Of Coins Or Of Paper Currency Or Similar Valuable Papers, E.G. Testing, Sorting By Denominations, Counting, Dispensing, Changing Or Depositing
+100 1 ^G07D
+**G07F: Physics -> Checking-Devices -> Coin-Freed Or Like Apparatus
+100 1 ^G07F
+**G07G: Physics -> Checking-Devices -> Registering The Receipt Of Cash, Valuables, Or Tokens
+100 1 ^G07G
+**G08: Physics -> Signalling
+100 1 ^G08$
+**G08B: Physics -> Signalling -> Signalling Or Calling Systems; Order Telegraphs; Alarm Systems
+100 1 ^G08B
+**G08C: Physics -> Signalling -> Transmission Systems For Measured Values, Control Or Similar Signals
+100 1 ^G08C
+**G08G: Physics -> Signalling -> Traffic Control Systems
+100 1 ^G08G
+**G09: Physics -> Educating; Cryptography; Display; Advertising; Seals
+100 1 ^G09$
+**G09B: Physics -> Educating; Cryptography; Display; Advertising; Seals -> Educational Or Demonstration Appliances; Appliances For Teaching, Or Communicating With, The Blind, Deaf Or Mute; Models; Planetaria; Globes; Maps; Diagrams
+100 1 ^G09B
+**G09C: Physics -> Educating; Cryptography; Display; Advertising; Seals -> Ciphering Or Deciphering Apparatus For Cryptographic Or Other Purposes Involving The Need For Secrecy
+100 1 ^G09C
+**G09D: Physics -> Educating; Cryptography; Display; Advertising; Seals -> Railway Or Like Time Or Fare Tables; Perpetual Calendars
+100 1 ^G09D
+**G09F: Physics -> Educating; Cryptography; Display; Advertising; Seals -> Displaying; Advertising; Signs; Labels Or Name-Plates; Seals
+100 1 ^G09F
+**G09G: Physics -> Educating; Cryptography; Display; Advertising; Seals -> Arrangements Or Circuits For Control Of Indicating Devices Using Static Means To Present Variable Information
+100 1 ^G09G
+**G10: Physics -> Musical Instruments; Acoustics
+100 1 ^G10$
+**G10B: Physics -> Musical Instruments; Acoustics -> Organs, Harmoniums Or Like Musical Instruments With Associated Blowing Apparatus
+100 1 ^G10B
+**G10C: Physics -> Musical Instruments; Acoustics -> Pianos, Harpsichords, Spinets Or Similar Stringed Musical Instruments With One Or More Keyboards
+100 1 ^G10C
+**G10D: Physics -> Musical Instruments; Acoustics -> Stringed Musical Instruments; Wind Musical Instruments; Accordions Or Concertinas; Percussion Musical Instruments; Musical Instruments Not Otherwise Provided For
+100 1 ^G10D
+**G10F: Physics -> Musical Instruments; Acoustics -> Automatic Musical Instruments
+100 1 ^G10F
+**G10G: Physics -> Musical Instruments; Acoustics -> Aids For Music; Supports For Musical Instruments; Other Auxiliary Devices Or Accessories For Music Or Musical Instruments
+100 1 ^G10G
+**G10H: Physics -> Musical Instruments; Acoustics -> Electrophonic Musical Instruments; Instruments In Which The Tones Are Generated By Electromechanical Means Or Electronic Generators, Or In Which The Tones Are Synthesised From A Data Store
+100 1 ^G10H
+**G10K: Physics -> Musical Instruments; Acoustics -> Sound-Producing Devices;  Methods Or Devices For Protecting Against, Or For Damping, Noise Or Other Acoustic Waves In General; Acoustics Not Otherwise Provided For
+100 1 ^G10K
+**G10L: Physics -> Musical Instruments; Acoustics -> Speech Analysis Or Synthesis; Speech Recognition; Speech Or Voice Processing; Speech Or Audio Coding Or Decoding
+100 1 ^G10L
+**G11: Physics -> Information Storage
+100 1 ^G11$
+**G11B: Physics -> Information Storage -> Information Storage Based On Relative Movement Between Record Carrier And Transducer
+100 1 ^G11B
+**G11C: Physics -> Information Storage -> Static Stores
+100 1 ^G11C
+**G12: Physics -> Instrument Details
+100 1 ^G12$
+**G12B: Physics -> Instrument Details -> Constructional Details Of Instruments, Or Comparable Details Of Other Apparatus, Not Otherwise Provided For
+100 1 ^G12B
+**G21: Physics -> Nuclear Physics; Nuclear Engineering
+100 1 ^G21$
+**G21B: Physics -> Nuclear Physics; Nuclear Engineering -> Fusion Reactors
+100 1 ^G21B
+**G21C: Physics -> Nuclear Physics; Nuclear Engineering -> Nuclear Reactors
+100 1 ^G21C
+**G21D: Physics -> Nuclear Physics; Nuclear Engineering -> Nuclear Power Plant
+100 1 ^G21D
+**G21F: Physics -> Nuclear Physics; Nuclear Engineering -> Protection Against X-Radiation, Gamma Radiation, Corpuscular Radiation Or Particle Bombardment; Treating Radioactively Contaminated Material; Decontamination Arrangements Therefor
+100 1 ^G21F
+**G21G: Physics -> Nuclear Physics; Nuclear Engineering -> Conversion Of Chemical Elements; Radioactive Sources
+100 1 ^G21G
+**G21H: Physics -> Nuclear Physics; Nuclear Engineering -> Obtaining Energy From Radioactive Sources; Applications Of Radiation From Radioactive Sources, Not Otherwise Provided For; Utilising Cosmic Radiation
+100 1 ^G21H
+**G21J: Physics -> Nuclear Physics; Nuclear Engineering -> Nuclear Explosives; Applications Thereof
+100 1 ^G21J
+**G21K: Physics -> Nuclear Physics; Nuclear Engineering -> Techniques For Handling Particles Or Ionising Radiation Not Otherwise Provided For; Irradiation Devices; Gamma Ray Or X-Ray Microscopes
+100 1 ^G21K
+**G99: Physics -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^G99$
+**G99Z: Physics -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^G99Z
+**H01: Electricity -> Basic Electric Elements
+100 1 ^H01$
+**H01B: Electricity -> Basic Electric Elements -> Cables; Conductors; Insulators; Selection Of Materials For Their Conductive, Insulating Or Dielectric Properties
+100 1 ^H01B
+**H01C: Electricity -> Basic Electric Elements -> Resistors
+100 1 ^H01C
+**H01F: Electricity -> Basic Electric Elements -> Magnets; Inductances; Transformers; Selection Of Materials For Their Magnetic Properties
+100 1 ^H01F
+**H01G: Electricity -> Basic Electric Elements -> Capacitors; Capacitors, Rectifiers, Detectors, Switching Devices, Light-Sensitive Or Temperature-Sensitive Devices Of The Electrolytic Type
+100 1 ^H01G
+**H01H: Electricity -> Basic Electric Elements -> Electric Switches; Relays; Selectors; Emergency Protective Devices
+100 1 ^H01H
+**H01J: Electricity -> Basic Electric Elements -> Electric Discharge Tubes Or Discharge Lamps
+100 1 ^H01J
+**H01K: Electricity -> Basic Electric Elements -> Electric Incandescent Lamps
+100 1 ^H01K
+**H01L: Electricity -> Basic Electric Elements -> Semiconductor Devices; Electric Solid State Devices Not Otherwise Provided For
+100 1 ^H01L
+**H01M: Electricity -> Basic Electric Elements -> Processes Or Means, E.G. Batteries, For The Direct Conversion Of Chemical Energy Into Electrical Energy
+100 1 ^H01M
+**H01P: Electricity -> Basic Electric Elements -> Waveguides; Resonators, Lines Or Other Devices Of The Waveguide Type
+100 1 ^H01P
+**H01Q: Electricity -> Basic Electric Elements -> Aerials
+100 1 ^H01Q
+**H01R: Electricity -> Basic Electric Elements -> Electrically-Conductive Connections; Structural Associations Of A Plurality Of Mutually-Insulated Electrical Connecting Elements; Coupling Devices; Current Collectors
+100 1 ^H01R
+**H01S: Electricity -> Basic Electric Elements -> Devices Using Stimulated Emission
+100 1 ^H01S
+**H01T: Electricity -> Basic Electric Elements -> Spark Gaps; Overvoltage Arresters Using Spark Gaps; Sparking Plugs; Corona Devices; Generating Ions To Be Introduced Into Non-Enclosed Gases
+100 1 ^H01T
+**H02: Electricity -> Generation, Conversion, Or Distribution Of Electric Power
+100 1 ^H02$
+**H02B: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Boards, Substations, Or Switching Arrangements For The Supply Or Distribution Of Electric Power
+100 1 ^H02B
+**H02G: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Installation Of Electric Cables Or Lines, Or Of Combined Optical And Electric Cables Or Lines
+100 1 ^H02G
+**H02H: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Emergency Protective Circuit Arrangements
+100 1 ^H02H
+**H02J: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Circuit Arrangements Or Systems For Supplying Or Distributing Electric Power; Systems For Storing Electric Energy
+100 1 ^H02J
+**H02K: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Dynamo-Electric Machines
+100 1 ^H02K
+**H02M: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Apparatus For Conversion Between Ac And Ac, Between Ac And Dc, Or Between Dc And Dc, And For Use With Mains Or Similar Power Supply Systems; Conversion Of Dc Or Ac Input Power Into Surge Output Power; Control Or Regulation Thereof
+100 1 ^H02M
+**H02N: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Electric Machines Not Otherwise Provided For
+100 1 ^H02N
+**H02P: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Control Or Regulation Of Electric Motors, Electric Generators Or Dynamo-Electric Converters; Controlling Transformers, Reactors Or Choke Coils
+100 1 ^H02P
+**H02S: Electricity -> Generation, Conversion, Or Distribution Of Electric Power -> Generation Of Electric Power By Conversion Of Infra-Red Radiation, Visible Light Or Ultraviolet Light, E.G. Using Photovoltaic [Pv] Modules
+100 1 ^H02S
+**H03: Electricity -> Basic Electronic Circuitry
+100 1 ^H03$
+**H03B: Electricity -> Basic Electronic Circuitry -> Generation Of Oscillations, Directly Or By Frequency-Changing, By Circuits Employing Active Elements Which Operate In A Non-Switching Manner; Generation Of Noise By Such Circuits
+100 1 ^H03B
+**H03C: Electricity -> Basic Electronic Circuitry -> Modulation
+100 1 ^H03C
+**H03D: Electricity -> Basic Electronic Circuitry -> Demodulation Or Transference Of Modulation From One Carrier To Another
+100 1 ^H03D
+**H03F: Electricity -> Basic Electronic Circuitry -> Amplifiers
+100 1 ^H03F
+**H03G: Electricity -> Basic Electronic Circuitry -> Control Of Amplification
+100 1 ^H03G
+**H03H: Electricity -> Basic Electronic Circuitry -> Impedance Networks, E.G. Resonant Circuits; Resonators
+100 1 ^H03H
+**H03J: Electricity -> Basic Electronic Circuitry -> Tuning Resonant Circuits; Selecting Resonant Circuits
+100 1 ^H03J
+**H03K: Electricity -> Basic Electronic Circuitry -> Pulse Technique
+100 1 ^H03K
+**H03L: Electricity -> Basic Electronic Circuitry -> Automatic Control, Starting, Synchronisation, Or Stabilisation Of Generators Of Electronic Oscillations Or Pulses
+100 1 ^H03L
+**H03M: Electricity -> Basic Electronic Circuitry -> Coding, Decoding Or Code Conversion, In General
+100 1 ^H03M
+**H04: Electricity -> Electric Communication Technique
+100 1 ^H04$
+**H04B: Electricity -> Electric Communication Technique -> Transmission
+100 1 ^H04B
+**H04H: Electricity -> Electric Communication Technique -> Broadcast Communication
+100 1 ^H04H
+**H04J: Electricity -> Electric Communication Technique -> Multiplex Communication
+100 1 ^H04J
+**H04K: Electricity -> Electric Communication Technique -> Secret Communication; Jamming Of Communication
+100 1 ^H04K
+**H04L: Electricity -> Electric Communication Technique -> Transmission Of Digital Information, E.G. Telegraphic Communication
+100 1 ^H04L
+**H04M: Electricity -> Electric Communication Technique -> Telephonic Communication
+100 1 ^H04M
+**H04N: Electricity -> Electric Communication Technique -> Pictorial Communication, E.G. Television
+100 1 ^H04N
+**H04Q: Electricity -> Electric Communication Technique -> Selecting
+100 1 ^H04Q
+**H04R: Electricity -> Electric Communication Technique -> Loudspeakers, Microphones, Gramophone Pick-Ups Or Like Acoustic Electromechanical Transducers; Deaf-Aid Sets; Public Address Systems
+100 1 ^H04R
+**H04S: Electricity -> Electric Communication Technique -> Stereophonic Systems
+100 1 ^H04S
+**H04W: Electricity -> Electric Communication Technique -> Wireless Communication Networks
+100 1 ^H04W
+**H05: Electricity -> Electric Techniques Not Otherwise Provided For
+100 1 ^H05$
+**H05B: Electricity -> Electric Techniques Not Otherwise Provided For -> Electric Heating; Electric Lighting Not Otherwise Provided For
+100 1 ^H05B
+**H05C: Electricity -> Electric Techniques Not Otherwise Provided For -> Electric Circuits Or Apparatus Specially Designed For Use In Equipment For Killing, Stunning, Enclosing Or Guiding Living Beings
+100 1 ^H05C
+**H05F: Electricity -> Electric Techniques Not Otherwise Provided For -> Static Electricity; Naturally-Occurring Electricity
+100 1 ^H05F
+**H05G: Electricity -> Electric Techniques Not Otherwise Provided For -> X-Ray Technique
+100 1 ^H05G
+**H05H: Electricity -> Electric Techniques Not Otherwise Provided For -> Plasma Technique; Production Of Accelerated Electrically- Charged Particles Or Of Neutrons; Production Or Acceleration Of Neutral Molecular Or Atomic Beams
+100 1 ^H05H
+**H05K: Electricity -> Electric Techniques Not Otherwise Provided For -> Printed Circuits; Casings Or Constructional Details Of Electric Apparatus; Manufacture Of Assemblages Of Electrical Components
+100 1 ^H05K
+**H99: Electricity -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^H99$
+**H99Z: Electricity -> Subject Matter Not Otherwise Provided For In This Section -> Subject Matter Not Otherwise Provided For In This Section
+100 1 ^H99Z

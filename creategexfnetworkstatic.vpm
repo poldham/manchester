@@ -1,0 +1,290 @@
+
+' Description: Create Gexf static network file from VP records
+' Version: 1.2 (static)
+' Author: Luciano Kay for STIP, Georgia Tech -- Dec 2010
+' Please, provide feedback for future versions to luciano.kay@gmail.com
+'
+' This script requires having two VP fields:
+' From: indicates origin of relationship in the network
+' To: indicates of the relationship in the network (maybe the same from the previous one, which leads to a symmetric network)
+'
+
+
+Dim arrayNodes()
+Dim arrayRels()
+Dim arrayEdges()
+
+debugmode=False
+strVersion="1.2 (static)"
+
+isDirected = False
+strDirectedOrNot = "undirected"
+useDiagonal = False
+useGroupNames=False
+useScale = False
+isSymmetric=False
+
+Dim objRegEx
+Set objRegEx = CreateObject("VBScript.RegExp")
+objRegEx.IgnoreCase = True
+objRegEx.Global = True
+objRegEx.Pattern = "[^a-z0-9\.,; \-\(\)\/]"
+
+strFirstField = ""
+strSecondField = ""
+
+arrDefaultFields = Array(strFirstField, strSecondField)
+arrFieldLabels = Array("From Field", "To Field")
+Dataset.PromptForMultiFieldsWithText "Please choose an appropriate field for each category", "Click OK  to confirm", arrFieldLabels, arrDefaultFields, arrGetFields
+strFirstField = arrGetFields(0)
+strSecondField = arrGetFields(1)
+
+if (strFirstField=strSecondField) then isSymmetric=True
+
+	
+if (isSymmetric=False) then
+	If MsgBox("Is this a directed newtork?", 4, "Directed or undirected network") = 6 Then
+		isDirected = True
+		strDirectedOrNot = "directed"
+	End if
+end if
+
+If MsgBox("Use diagonal?", 4, "Use of diagonal") = 6 Then
+	useDiagonal = True
+End if
+
+
+View.CreateList strFirstField, strRowItemListView
+nStatus = List.GetGroupNames(arrayGroupNamesRowItemListView)
+List.GetValue 0, 3, strRowItemFieldName
+if (IsArray(arrayGroupNamesRowItemListView)) then
+	numGroupsRowItem=Ubound(arrayGroupNamesRowItemListView)
+end if
+
+if (isSymmetric=False) then
+	View.CreateList strSecondField, strColItemListView
+	nStatus = List.GetGroupNames(arrayGroupNamesColItemListView)
+	List.GetValue 0, 3, strColItemFieldName
+	if (IsArray(arrayGroupNamesColItemListView)) then
+		numGroupsColItem=Ubound(arrayGroupNamesColItemListView)
+	end if
+end if
+
+if MsgBox("Do you want node attributes from groups?", 4, "Attributes from groups") = 6 Then
+	bolProcessAttributes=True
+	if (numGroupsRowItem>0 OR numGroupsColItem) then
+		If MsgBox("Convert group names into single attribute? (items should be assigned to only one group at a time)", 4, "Group names as single attribute") = 6 Then
+			useGroupNames=True
+		else
+			If MsgBox("Convert group values into single attribute?", 4, "Group values as single attribute") = 6 Then
+				useScale = True
+			End if
+		End if
+	end if
+end if
+
+
+View.CreateMatrix strFirstField, "UNGROUPED", strSecondField, "UNGROUPED", "COOCCURENCE", strMainMatrixView
+Matrix.Flood 0
+Matrix.GetNumRows numTotalRows
+Matrix.GetNumColumns numTotalColumns
+
+Set fso = CreateObject("Scripting.FileSystemObject")
+App.GetActiveDSDir strDataSetPath
+App.GetActiveDSName strParentName
+strBaseName = fso.GetBaseName(strParentName)
+App.GetFilenameToSave strDatasetPath, strFieldName & ".gexf", "Gefx Network File (*.gexf)|*.gexf|All files (*.*)|*.*||", strFileName
+Set textFile = fso.OpenTextFile(strFileName, 2, True)
+
+startDateTime=now
+
+Call CreateGexfFile
+
+
+
+Sub CreateGexfFile()
+
+	ReDim arrayNodes(0)
+	ReDim arrayRels(0)
+	
+	textFile.WriteLine "<?xml version=" & chr(34) & "1.0" & chr(34) & " encoding=" & chr(34) & "UTF-8" & chr(34) & "?>"
+	textFile.WriteLine "<gexf xmlns=" & chr(34) & "http://www.gexf.net/1.1draft" & chr(34) & " version=" & chr(34) & "1.1" & chr(34) & ">"
+	textFile.WriteLine "<meta lastmodifieddate=" & chr(34) & now & chr(34) & ">"
+	textFile.WriteLine "<creator>VP-to-Gephi macro " & strVersion & "</creator>"
+	textFile.WriteLine "<description>Static network from [" & strFirstField & "] to [" & strSecondField & "]</description>"
+	textFile.WriteLine "</meta>"
+	textFile.WriteLine "<graph mode=" & chr(34) & "static" & chr(34) & " defaultedgetype=" & chr(34) & strDirectedOrNot & chr(34) & ">"
+	
+    textFile.WriteLine "<attributes class=" & chr(34) & "node" & chr(34) & ">"
+    textFile.WriteLine "<attribute id=" & chr(34) & "0" & chr(34) & " title=" & chr(34) & "records" & chr(34) & " type=" & chr(34) & "integer" & chr(34) & " />"
+
+	'create attributes for items
+	if (bolProcessAttributes=True) then
+		if (useGroupNames=True OR useScale=True) then
+			if (useGroupNames=True) then strAttType="string"
+			if (useScale=True) then strAttType="integer"
+			if (numGroupsRowItem>0) then
+				textFile.WriteLine "<attribute id=" & chr(34) & "1" & chr(34) & " title=" & chr(34) & strRowItemFieldName & chr(34) & " type=" & chr(34) & strAttType & chr(34) & " />"
+			end if
+			if (numGroupsColItem>0) then
+				textFile.WriteLine "<attribute id=" & chr(34) & "2" & chr(34) & " title=" & chr(34) & strColItemFieldName & chr(34) & " type=" & chr(34) & strAttType & chr(34) & " />"
+			end if	
+		else
+			if (numGroupsRowItem>0) then
+				For i = 0 to numGroupsRowItem
+					textFile.WriteLine "<attribute id=" & chr(34) & i+1 & chr(34) & " title=" & chr(34) & arrayGroupNamesRowItemListView(i) & chr(34) & " type=" & chr(34) & "integer" & chr(34) & " />"
+				Next
+			end if
+			if (numGroupsColItem>0) then
+				For i = 0 to numGroupsColItem
+					textFile.WriteLine "<attribute id=" & chr(34) & (numGroupsRowItem+1)+i+1 & chr(34) & " title=" & chr(34) & arrayGroupNamesColItemListView(i) & chr(34) & " type=" & chr(34) & "integer" & chr(34) & " />"
+				Next
+			end if	
+		end if
+	end if
+	
+	textFile.WriteLine "</attributes>"	
+	
+	textFile.WriteLine "<nodes>"
+	
+	z=-1
+	
+	for j = 3 to numTotalRows
+		Matrix.Sort "ROW", j, "DESCEND"
+		Matrix.GetValue j, 2, strRowItem
+		Matrix.GetValue j, 1, strRowItemRecords
+		idRow=GetIDItem(strRowItem,arrayNodes,True,strRowItem,strRowItemRecords,"RowNode")
+		
+		for i = 3 to numTotalColumns
+			Matrix.GetValue j, i, intCellValue
+			if CSng(intCellValue)=0 then exit for
+			Matrix.GetValue 2, i, strColItem
+			Matrix.GetValue 1, i, strColItemRecords
+			idCol=GetIDItem(strColItem,arrayNodes,True,strColItem,strColItemRecords,"ColNode")
+			if (idRow <> idCol OR useDiagonal=True) then
+				if (GetIDItem(idCol & "-" & idRow,arrayRels,False,"","","") = 999999 OR isDirected=True) then
+					idRel=GetIDItem(idRow & "-" & idCol,arrayRels,True,"","","")
+					z=z+1
+					ReDim Preserve arrayEdges(z)
+					arrayEdges(z) = "<edge id=" & chr(34) & idRel & chr(34) & " source=" & chr(34) & idRow & chr(34) & " target=" & chr(34) & idCol & chr(34) & " weight =" & chr(34) & intCellValue & chr(34) & " />"
+				end if
+			end if
+		next
+	next
+
+	textFile.WriteLine "</nodes>"
+		
+	textFile.WriteLine "<edges>"
+	for z=0 to ubound(arrayEdges)
+		textFile.WriteLine arrayEdges(z)
+	next
+	textFile.WriteLine "</edges>"
+
+	textFile.WriteLine "</graph>"
+	textFile.WriteLine "</gexf>"
+	textFile.WriteLine "<!--Started: " & startDateTime & " and it took: " & datediff("s", startDateTime, now) & " seconds. Macro version: " & strVersion & "-->"
+	
+	textFile.Close
+
+	View.Delete strMainMatrixView
+	View.Delete strRowItemListView
+	if (isSymmetric=False) then
+		View.Delete strColItemListView
+	end if
+End Sub
+
+
+
+
+'Return ID for an item; if it does not exist, we create, assign ID, and return such ID
+Function GetIDItem(strItem, ByRef arrayItems, bolCreate, strLabel, strValue, strType)
+	GetIDItem=999999
+	If Not isNull(arrayItems) then
+		intUpperBound = Ubound(arrayItems)
+		For count = 0 to intUpperBound
+			If arrayItems(count)= strItem then
+				GetIDItem=count
+				Exit For
+			End if
+		Next
+	End if
+	
+	if (GetIDItem=999999 AND bolCreate=True) Then
+		ReDim Preserve arrayItems(intUpperBound+1)
+		arrayItems(intUpperBound+1)=strItem
+		GetIDItem=intUpperBound+1
+		
+		if (strType="RowNode" OR strType="ColNode") then
+			if (isSymmetric=True) then strType="RowNode"
+			strItemLabelforTextFile = objRegEx.Replace(strItem, " ")
+			textFile.WriteLine "<node id=" & chr(34) & GetIDItem & chr(34) & " label=" & chr(34) & strItemLabelforTextFile & chr(34) & ">"
+			textFile.WriteLine "<attvalues>"
+			textFile.WriteLine "<attvalue for=" & chr(34) & "0" & chr(34) & " value=" & chr(34) & strValue & chr(34) & "/>"
+			if (bolProcessAttributes=True) then textFile.WriteLine GetNodeAttributesFromGroups(strType,strItem)				
+			textFile.WriteLine "</attvalues>"
+			textFile.WriteLine "</node>"
+			View.Select strMainMatrixView
+		end if
+	end if
+End Function
+
+
+
+' GetNodeAttributesFromGroups(strType,strLabel)
+'	strType: RowNode|ColNode
+'	strLabel: node's label
+' Requires:
+'	list of row nodes: strRowItemListView
+'	list of col nodes: strColItemListView (if asymmetric)
+'	number of groups in list row nodes: numGroupsRowItem
+'	number of groups in list col nodes: numGroupsColItem (if asymmetric)
+' Returns:
+'	gexf code with format <attvalue></attvalue> for each group for the requested node
+Function GetNodeAttributesFromGroups(strType,strLabel)
+	
+	GetNodeAttributesFromGroups=""
+	If ((numGroupsRowItem>0 AND strType="RowNode") OR (numGroupsColItem>0 AND strType="ColNode")) then
+		if strType="RowNode" then
+			View.Select strRowItemListView
+			numGroups=numGroupsRowItem
+			startFrom=0
+			attnumber=1
+		else
+			View.Select strColItemListView
+			numGroups=numGroupsColItem
+			startFrom=numGroupsRowItem+1
+			attnumber=2
+		end if
+			
+		List.GetNumRows numberRowItems
+		for g = 1 to numberRowItems
+			List.GetValue g, 3, strListItem
+			if (strListItem=strLabel) then
+				if (useGroupNames=True) then
+					For i = 0 to numGroups
+						List.GetValue g, 4+i, strItemGroupValue
+						if (strItemGroupValue>0) then
+							List.GetValue 0, 4+i, strItemGroupValue
+							GetNodeAttributesFromGroups = GetNodeAttributesFromGroups & "<attvalue for=" & chr(34) & attnumber & chr(34) & " value=" & chr(34) & strItemGroupValue & chr(34) & " />"
+							exit for
+						end if
+					next						
+				elseif (useScale=True) then		
+					totalValue=0
+					For i = 0 to numGroups
+						List.GetValue g, 4+i, strItemGroupValue
+						totalValue=totalValue+strItemGroupValue*(2^i)
+					next
+					GetNodeAttributesFromGroups = GetNodeAttributesFromGroups & "<attvalue for=" & chr(34) & attnumber & chr(34) & " value=" & chr(34) & totalValue & chr(34) &  " />"							
+				else
+					For i = 0 to numGroups
+						List.GetValue g, 4+i, strItemGroupValue
+						GetNodeAttributesFromGroups = GetNodeAttributesFromGroups & "<attvalue for=" & chr(34) & startFrom+i+1 & chr(34) & " value=" & chr(34) & strItemGroupValue & chr(34) & " />"
+					next
+				end if
+				exit for
+			end if
+		Next
+	end if
+	
+End Function
